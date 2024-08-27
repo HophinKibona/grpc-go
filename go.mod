@@ -1,4 +1,4 @@
-module google.golang.org/grpc
+module google.golang.org/grpcv54
 
 go 1.17
 
@@ -19,10 +19,15 @@ require (
 )
 
 require (
+	github.com/stretchr/testify v1.8.1 // indirect
+	golang.org/x/text v0.8.0 // indirect
+	google.golang.org/appengine v1.6.7 // indirect
+)
+
+require (
 	cloud.google.com/go/compute v1.15.1 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.4.1 // indirect
 	github.com/envoyproxy/protoc-gen-validate v0.9.1 // indirect
-	golang.org/x/text v0.8.0 // indirect
-	google.golang.org/appengine v1.6.7 // indirect
+	google.golang.org/grpc v1.51.0
 )

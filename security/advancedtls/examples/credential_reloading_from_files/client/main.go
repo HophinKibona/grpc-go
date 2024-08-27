@@ -27,10 +27,10 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/tls/certprovider/pemfile"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
-	"google.golang.org/grpc/security/advancedtls"
-	"google.golang.org/grpc/security/advancedtls/testdata"
+	"google.golang.org/grpcv54/credentials/tls/certprovider/pemfile"
+	pb "google.golang.org/grpcv54/examples/helloworld/helloworld"
+	"google.golang.org/grpcv54/security/advancedtls"
+	"google.golang.org/grpcv54/security/advancedtls/testdata"
 )
 
 var address = "localhost:50051"

@@ -27,19 +27,19 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/benchmark"
-	"google.golang.org/grpc/benchmark/stats"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/syscall"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/testdata"
+	"google.golang.org/grpcv54/benchmark"
+	"google.golang.org/grpcv54/benchmark/stats"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/syscall"
+	"google.golang.org/grpcv54/status"
+	"google.golang.org/grpcv54/testdata"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
+	testpb "google.golang.org/grpcv54/interop/grpc_testing"
 
-	_ "google.golang.org/grpc/xds" // To install the xds resolvers and balancers.
+	_ "google.golang.org/grpcv54/xds" // To install the xds resolvers and balancers.
 )
 
 var caFile = flag.String("ca_file", "", "The file containing the CA root cert file")

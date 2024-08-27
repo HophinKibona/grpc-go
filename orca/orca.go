@@ -32,10 +32,10 @@ import (
 	"fmt"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/balancerload"
-	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/internal/balancerload"
+	"google.golang.org/grpcv54/metadata"
 	"google.golang.org/protobuf/proto"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"

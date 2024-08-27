@@ -27,28 +27,28 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/balancergroup"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/stubserver"
-	rrutil "google.golang.org/grpc/internal/testutils/roundrobin"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/balancer/priority"
-	"google.golang.org/grpc/xds/internal/xdsclient"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/internal/balancergroup"
+	"google.golang.org/grpcv54/internal/grpctest"
+	"google.golang.org/grpcv54/internal/stubserver"
+	rrutil "google.golang.org/grpcv54/internal/testutils/roundrobin"
+	"google.golang.org/grpcv54/internal/testutils/xds/e2e"
+	"google.golang.org/grpcv54/resolver"
+	"google.golang.org/grpcv54/resolver/manual"
+	"google.golang.org/grpcv54/serviceconfig"
+	"google.golang.org/grpcv54/status"
+	"google.golang.org/grpcv54/xds/internal/balancer/priority"
+	"google.golang.org/grpcv54/xds/internal/xdsclient"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
-	testgrpc "google.golang.org/grpc/test/grpc_testing"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 
-	_ "google.golang.org/grpc/xds/internal/balancer/clusterresolver" // Register the "cluster_resolver_experimental" LB policy.
+	_ "google.golang.org/grpcv54/xds/internal/balancer/clusterresolver" // Register the "cluster_resolver_experimental" LB policy.
 )
 
 const (

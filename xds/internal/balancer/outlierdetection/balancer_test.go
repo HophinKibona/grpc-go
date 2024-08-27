@@ -31,16 +31,16 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/balancer/stub"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/grpctest"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/clusterimpl"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/internal/balancer/stub"
+	"google.golang.org/grpcv54/internal/grpcsync"
+	"google.golang.org/grpcv54/internal/grpctest"
+	internalserviceconfig "google.golang.org/grpcv54/internal/serviceconfig"
+	"google.golang.org/grpcv54/internal/testutils"
+	"google.golang.org/grpcv54/resolver"
+	"google.golang.org/grpcv54/serviceconfig"
+	"google.golang.org/grpcv54/xds/internal/balancer/clusterimpl"
 )
 
 var (

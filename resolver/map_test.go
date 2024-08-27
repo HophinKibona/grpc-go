@@ -24,7 +24,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/attributes"
+	"google.golang.org/grpcv54/attributes"
 )
 
 // Note: each address is different from addr1 by one value.  addr7 matches

@@ -33,9 +33,9 @@ import (
 	"sync"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/profiling"
-	ppb "google.golang.org/grpc/profiling/proto"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/internal/profiling"
+	ppb "google.golang.org/grpcv54/profiling/proto"
 )
 
 var logger = grpclog.Component("profiling")

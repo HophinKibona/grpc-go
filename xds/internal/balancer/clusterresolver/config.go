@@ -22,10 +22,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/outlierdetection"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
+	internalserviceconfig "google.golang.org/grpcv54/internal/serviceconfig"
+	"google.golang.org/grpcv54/serviceconfig"
+	"google.golang.org/grpcv54/xds/internal/balancer/outlierdetection"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/bootstrap"
 )
 
 // DiscoveryMechanismType is the type of discovery mechanism.

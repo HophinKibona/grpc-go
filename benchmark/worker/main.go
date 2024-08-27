@@ -33,12 +33,12 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/status"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
+	testpb "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 var (

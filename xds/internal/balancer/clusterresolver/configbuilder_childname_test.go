@@ -21,8 +21,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"google.golang.org/grpcv54/xds/internal"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource"
 )
 
 func Test_nameGenerator_generate(t *testing.T) {

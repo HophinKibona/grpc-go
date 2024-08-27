@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/grpctest"
+	"google.golang.org/grpcv54/internal/stubserver"
+	"google.golang.org/grpcv54/internal/testutils/xds/e2e"
 
-	testgrpc "google.golang.org/grpc/test/grpc_testing"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 )
 
 type s struct {

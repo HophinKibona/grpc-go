@@ -39,7 +39,7 @@ import (
 	math "math"
 
 	proto "github.com/golang/protobuf/proto"
-	grpc "google.golang.org/grpc"
+	grpc "google.golang.org/grpcv54"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

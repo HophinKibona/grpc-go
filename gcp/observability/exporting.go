@@ -25,8 +25,8 @@ import (
 
 	"google.golang.org/api/option"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/stats/opencensus"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/stats/opencensus"
 
 	gcplogging "cloud.google.com/go/logging"
 )

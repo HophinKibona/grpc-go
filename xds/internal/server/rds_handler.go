@@ -21,7 +21,7 @@ package server
 import (
 	"sync"
 
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource"
 )
 
 // rdsHandlerUpdate wraps the full RouteConfigUpdate that are dynamically

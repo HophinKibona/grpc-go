@@ -22,8 +22,8 @@ import (
 	"encoding/json"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpcv54/balancer/roundrobin"
+	"google.golang.org/grpcv54/serviceconfig"
 )
 
 const (

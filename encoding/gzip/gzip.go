@@ -32,7 +32,7 @@ import (
 	"io"
 	"sync"
 
-	"google.golang.org/grpc/encoding"
+	"google.golang.org/grpcv54/encoding"
 )
 
 // Name is the name registered for the gzip compressor.

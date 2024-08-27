@@ -21,8 +21,8 @@ package resolver
 import (
 	"fmt"
 
-	"google.golang.org/grpc/grpclog"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpcv54/grpclog"
+	internalgrpclog "google.golang.org/grpcv54/internal/grpclog"
 )
 
 const prefix = "[xds-resolver %p] "

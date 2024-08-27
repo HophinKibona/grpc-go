@@ -34,11 +34,11 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc/internal/channelz"
+	"google.golang.org/grpcv54/internal/channelz"
 	"google.golang.org/protobuf/testing/protocmp"
 
 	durpb "github.com/golang/protobuf/ptypes/duration"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
+	channelzpb "google.golang.org/grpcv54/channelz/grpc_channelz_v1"
 )
 
 func init() {

@@ -21,9 +21,9 @@ import (
 	"strings"
 	"testing"
 
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/transport"
+	"google.golang.org/grpcv54/xds/internal/testutils"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/bootstrap"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/transport"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 )

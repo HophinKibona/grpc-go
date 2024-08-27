@@ -21,7 +21,7 @@ package grpcutil
 import (
 	"strings"
 
-	"google.golang.org/grpc/internal/envconfig"
+	"google.golang.org/grpcv54/internal/envconfig"
 )
 
 // RegisteredCompressorNames holds names of the registered compressors.

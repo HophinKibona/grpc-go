@@ -24,23 +24,23 @@ import (
 	"testing"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/rls"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/internal/envconfig"
+	"google.golang.org/grpcv54/internal/testutils"
+	"google.golang.org/grpcv54/internal/testutils/rls"
+	"google.golang.org/grpcv54/internal/testutils/xds/e2e"
 	"google.golang.org/protobuf/types/known/durationpb"
 
 	v3clusterpb "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	v3listenerpb "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	v3routepb "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	testgrpc "google.golang.org/grpc/test/grpc_testing"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	rlspb "google.golang.org/grpcv54/internal/proto/grpc_lookup_v1"
+	testgrpc "google.golang.org/grpcv54/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 
-	_ "google.golang.org/grpc/balancer/rls" // Register the RLS Load Balancing policy.
+	_ "google.golang.org/grpcv54/balancer/rls" // Register the RLS Load Balancing policy.
 )
 
 // defaultClientResourcesWithRLSCSP returns a set of resources (LDS, RDS, CDS, EDS) for a

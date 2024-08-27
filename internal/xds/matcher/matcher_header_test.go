@@ -22,7 +22,7 @@ import (
 	"regexp"
 	"testing"
 
-	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpcv54/metadata"
 )
 
 func TestHeaderExactMatcherMatch(t *testing.T) {

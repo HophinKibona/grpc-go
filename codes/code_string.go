@@ -21,7 +21,7 @@ package codes
 import (
 	"strconv"
 
-	"google.golang.org/grpc/internal"
+	"google.golang.org/grpcv54/internal"
 )
 
 func init() {

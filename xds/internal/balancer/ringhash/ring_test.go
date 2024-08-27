@@ -24,8 +24,8 @@ import (
 	"testing"
 
 	xxhash "github.com/cespare/xxhash/v2"
-	"google.golang.org/grpc/balancer/weightedroundrobin"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/balancer/weightedroundrobin"
+	"google.golang.org/grpcv54/resolver"
 )
 
 var testAddrs []resolver.Address

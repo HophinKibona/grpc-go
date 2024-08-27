@@ -26,8 +26,8 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	ppb "google.golang.org/grpc/profiling/proto"
+	"google.golang.org/grpcv54/credentials/insecure"
+	ppb "google.golang.org/grpcv54/profiling/proto"
 )
 
 func setEnabled(ctx context.Context, c ppb.ProfilingClient, enabled bool) error {

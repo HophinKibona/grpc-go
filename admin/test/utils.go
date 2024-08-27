@@ -28,16 +28,16 @@ import (
 
 	"github.com/google/uuid"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/admin"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/testutils/xds/bootstrap"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/admin"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/testutils/xds/bootstrap"
+	"google.golang.org/grpcv54/status"
 
 	v3statusgrpc "github.com/envoyproxy/go-control-plane/envoy/service/status/v3"
 	v3statuspb "github.com/envoyproxy/go-control-plane/envoy/service/status/v3"
-	channelzgrpc "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
+	channelzgrpc "google.golang.org/grpcv54/channelz/grpc_channelz_v1"
+	channelzpb "google.golang.org/grpcv54/channelz/grpc_channelz_v1"
 )
 
 const (

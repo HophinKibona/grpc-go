@@ -25,18 +25,18 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/stubserver"
-	rlstest "google.golang.org/grpc/internal/testutils/rls"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/grpcsync"
+	"google.golang.org/grpcv54/internal/stubserver"
+	rlstest "google.golang.org/grpcv54/internal/testutils/rls"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/status"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	testgrpc "google.golang.org/grpc/test/grpc_testing"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	rlspb "google.golang.org/grpcv54/internal/proto/grpc_lookup_v1"
+	testgrpc "google.golang.org/grpcv54/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 )
 
 // Test verifies the scenario where there is no matching entry in the data cache

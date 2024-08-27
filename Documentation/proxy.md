@@ -13,4 +13,4 @@ connection before giving it to gRPC.
 
 If the default proxy doesn't work for you, replace the default dialer with your
 custom proxy dialer. This can be done using
-[`WithDialer`](https://godoc.org/google.golang.org/grpc#WithDialer).
+[`WithDialer`](https://godoc.org/google.golang.org/grpcv54#WithDialer).

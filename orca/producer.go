@@ -22,11 +22,11 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/orca/internal"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/internal/grpcsync"
+	"google.golang.org/grpcv54/orca/internal"
+	"google.golang.org/grpcv54/status"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"
 	v3orcaservicegrpc "github.com/cncf/xds/go/xds/service/orca/v3"

@@ -29,13 +29,13 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/benchmark"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/syscall"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/testdata"
+	"google.golang.org/grpcv54/benchmark"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/internal/syscall"
+	testpb "google.golang.org/grpcv54/interop/grpc_testing"
+	"google.golang.org/grpcv54/status"
+	"google.golang.org/grpcv54/testdata"
 )
 
 var (

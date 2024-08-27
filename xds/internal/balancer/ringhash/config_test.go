@@ -22,7 +22,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/envconfig"
+	"google.golang.org/grpcv54/internal/envconfig"
 )
 
 func (s) TestParseConfig(t *testing.T) {

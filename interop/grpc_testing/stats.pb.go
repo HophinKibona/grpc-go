@@ -21,7 +21,7 @@
 package grpc_testing
 
 import (
-	core "google.golang.org/grpc/interop/grpc_testing/core"
+	core "google.golang.org/grpcv54/interop/grpc_testing/core"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

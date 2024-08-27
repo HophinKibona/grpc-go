@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/balancer/base"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/internal/grpclog"
 )
 
 type subBalancerState struct {

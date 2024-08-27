@@ -28,10 +28,9 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-
-	echogrpc "google.golang.org/grpc/examples/features/proto/echo"
-	echopb "google.golang.org/grpc/examples/features/proto/echo"
-	"google.golang.org/grpc/examples/features/stats_monitoring/statshandler"
+	echogrpc "google.golang.org/grpcv54/examples/features/proto/echo"
+	echopb "google.golang.org/grpcv54/examples/features/proto/echo"
+	"google.golang.org/grpcv54/examples/features/stats_monitoring/statshandler"
 )
 
 var port = flag.Int("port", 50051, "the port to serve on")

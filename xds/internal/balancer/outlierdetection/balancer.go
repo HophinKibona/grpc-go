@@ -31,16 +31,16 @@ import (
 	"time"
 	"unsafe"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/balancer/gracefulswitch"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/internal/balancer/gracefulswitch"
+	"google.golang.org/grpcv54/internal/buffer"
+	"google.golang.org/grpcv54/internal/envconfig"
+	"google.golang.org/grpcv54/internal/grpclog"
+	"google.golang.org/grpcv54/internal/grpcrand"
+	"google.golang.org/grpcv54/internal/grpcsync"
+	"google.golang.org/grpcv54/resolver"
+	"google.golang.org/grpcv54/serviceconfig"
 )
 
 // Globals to stub out in tests.

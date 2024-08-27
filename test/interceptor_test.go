@@ -25,9 +25,9 @@ import (
 	"testing"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/testutils"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"google.golang.org/grpcv54/internal/stubserver"
+	"google.golang.org/grpcv54/internal/testutils"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 )
 
 type parentCtxkey struct{}

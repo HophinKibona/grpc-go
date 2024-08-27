@@ -25,10 +25,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/xdsclient/load"
+	"google.golang.org/grpcv54/internal/grpcsync"
+	"google.golang.org/grpcv54/internal/pretty"
+	"google.golang.org/grpcv54/xds/internal"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/load"
 	"google.golang.org/protobuf/proto"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"

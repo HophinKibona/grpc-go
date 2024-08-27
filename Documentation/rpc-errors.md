@@ -58,11 +58,11 @@ receives an error with details:
 exit status 1
 ```
 
-[status]:       https://godoc.org/google.golang.org/grpc/status#Status
-[new-status]:   https://godoc.org/google.golang.org/grpc/status#New
-[code]:         https://godoc.org/google.golang.org/grpc/codes#Code
-[with-details]: https://godoc.org/google.golang.org/grpc/internal/status#Status.WithDetails
-[details]:      https://godoc.org/google.golang.org/grpc/internal/status#Status.Details
-[status-err]:   https://godoc.org/google.golang.org/grpc/internal/status#Status.Err
-[status-error]: https://godoc.org/google.golang.org/grpc/status#Error
+[status]:       https://godoc.org/google.golang.org/grpcv54/status#Status
+[new-status]:   https://godoc.org/google.golang.org/grpcv54/status#New
+[code]:         https://godoc.org/google.golang.org/grpcv54/codes#Code
+[with-details]: https://godoc.org/google.golang.org/grpcv54/internal/status#Status.WithDetails
+[details]:      https://godoc.org/google.golang.org/grpcv54/internal/status#Status.Details
+[status-err]:   https://godoc.org/google.golang.org/grpcv54/internal/status#Status.Err
+[status-error]: https://godoc.org/google.golang.org/grpcv54/status#Error
 [example]:      https://github.com/grpc/grpc-go/tree/master/examples/features/errors

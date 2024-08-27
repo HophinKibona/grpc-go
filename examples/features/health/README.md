@@ -31,7 +31,7 @@ An empty string (`""`) typically indicates the overall health of a server should
 
 ```go
 // import grpc/health to enable transparent client side checking 
-import _ "google.golang.org/grpc/health"
+import _ "google.golang.org/grpcv54/health"
 
 // set up appropriate service config
 serviceConfig := grpc.WithDefaultServiceConfig(`{

@@ -26,8 +26,8 @@ import (
 	"path"
 	"testing"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/testdata"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/testdata"
 )
 
 const (

@@ -21,8 +21,8 @@ package balancer
 import (
 	"testing"
 
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/internal/grpctest"
 )
 
 type s struct {

@@ -23,10 +23,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/ringhash"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
+	"google.golang.org/grpcv54/balancer"
+	internalserviceconfig "google.golang.org/grpcv54/internal/serviceconfig"
+	"google.golang.org/grpcv54/xds/internal/balancer/ringhash"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/bootstrap"
 )
 
 func TestDiscoveryMechanismTypeMarshalJSON(t *testing.T) {

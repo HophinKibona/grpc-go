@@ -23,12 +23,12 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/balancer/gracefulswitch"
-	"google.golang.org/grpc/internal/cache"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/internal/balancer/gracefulswitch"
+	"google.golang.org/grpcv54/internal/cache"
+	"google.golang.org/grpcv54/internal/grpclog"
+	"google.golang.org/grpcv54/resolver"
 )
 
 // subBalancerWrapper is used to keep the configurations that will be used to start

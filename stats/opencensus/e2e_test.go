@@ -33,12 +33,12 @@ import (
 	"go.opencensus.io/trace"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/encoding/gzip"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/test/grpc_testing"
+	"google.golang.org/grpcv54/encoding/gzip"
+	"google.golang.org/grpcv54/internal/grpctest"
+	"google.golang.org/grpcv54/internal/leakcheck"
+	"google.golang.org/grpcv54/internal/stubserver"
+	"google.golang.org/grpcv54/internal/testutils"
+	"google.golang.org/grpcv54/test/grpc_testing"
 )
 
 type s struct {

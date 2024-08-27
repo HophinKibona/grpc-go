@@ -28,10 +28,10 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/testutils"
 
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/resolver"
 )
 
 func (s) TestParsedTarget_Success_WithoutCustomDialer(t *testing.T) {

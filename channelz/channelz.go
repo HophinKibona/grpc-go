@@ -29,7 +29,7 @@
 // later release.
 package channelz
 
-import "google.golang.org/grpc/internal/channelz"
+import "google.golang.org/grpcv54/internal/channelz"
 
 // Identifier is an opaque identifier which uniquely identifies an entity in the
 // channelz database.

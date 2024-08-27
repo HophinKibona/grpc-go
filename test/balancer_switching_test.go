@@ -24,19 +24,19 @@ import (
 	"testing"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/balancer/stub"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/testutils/fakegrpclb"
-	"google.golang.org/grpc/internal/testutils/pickfirst"
-	rrutil "google.golang.org/grpc/internal/testutils/roundrobin"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/internal/balancer/stub"
+	"google.golang.org/grpcv54/internal/channelz"
+	"google.golang.org/grpcv54/internal/stubserver"
+	"google.golang.org/grpcv54/internal/testutils/fakegrpclb"
+	"google.golang.org/grpcv54/internal/testutils/pickfirst"
+	rrutil "google.golang.org/grpcv54/internal/testutils/roundrobin"
+	"google.golang.org/grpcv54/resolver"
+	"google.golang.org/grpcv54/resolver/manual"
 
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 )
 
 const (

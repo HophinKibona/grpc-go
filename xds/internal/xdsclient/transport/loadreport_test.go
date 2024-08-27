@@ -25,9 +25,9 @@ import (
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/uuid"
-	"google.golang.org/grpc/internal/testutils/xds/fakeserver"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/xdsclient/transport"
+	"google.golang.org/grpcv54/internal/testutils/xds/fakeserver"
+	"google.golang.org/grpcv54/xds/internal/testutils"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/transport"
 	"google.golang.org/protobuf/testing/protocmp"
 	"google.golang.org/protobuf/types/known/durationpb"
 

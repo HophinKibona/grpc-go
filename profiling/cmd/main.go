@@ -23,8 +23,8 @@ package main
 import (
 	"os"
 
-	"google.golang.org/grpc/grpclog"
-	ppb "google.golang.org/grpc/profiling/proto"
+	"google.golang.org/grpcv54/grpclog"
+	ppb "google.golang.org/grpcv54/profiling/proto"
 )
 
 var logger = grpclog.Component("profiling")

@@ -26,10 +26,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/xds/internal/xdsclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"google.golang.org/grpcv54/internal/testutils"
+	"google.golang.org/grpcv54/internal/testutils/xds/e2e"
+	"google.golang.org/grpcv54/xds/internal/xdsclient"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource"
 	"google.golang.org/protobuf/testing/protocmp"
 	"google.golang.org/protobuf/types/known/anypb"
 

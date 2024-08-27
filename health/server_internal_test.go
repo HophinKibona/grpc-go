@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	healthpb "google.golang.org/grpc/health/grpc_health_v1"
-	"google.golang.org/grpc/internal/grpctest"
+	healthpb "google.golang.org/grpcv54/health/grpc_health_v1"
+	"google.golang.org/grpcv54/internal/grpctest"
 )
 
 type s struct {

@@ -20,7 +20,7 @@
 // avoid polluting the godoc of the top-level orca package.
 package internal
 
-import ibackoff "google.golang.org/grpc/internal/backoff"
+import ibackoff "google.golang.org/grpcv54/internal/backoff"
 
 // AllowAnyMinReportingInterval prevents clamping of the MinReportingInterval
 // configured via ServiceOptions, to a minimum of 30s.

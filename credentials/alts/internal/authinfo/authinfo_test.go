@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"testing"
 
-	altspb "google.golang.org/grpc/credentials/alts/internal/proto/grpc_gcp"
-	"google.golang.org/grpc/internal/grpctest"
+	altspb "google.golang.org/grpcv54/credentials/alts/internal/proto/grpc_gcp"
+	"google.golang.org/grpcv54/internal/grpctest"
 )
 
 type s struct {

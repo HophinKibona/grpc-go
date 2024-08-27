@@ -26,9 +26,9 @@ import (
 	"io"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/grpclog"
-	metricspb "google.golang.org/grpc/stress/grpc_testing"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/grpclog"
+	metricspb "google.golang.org/grpcv54/stress/grpc_testing"
 )
 
 var (

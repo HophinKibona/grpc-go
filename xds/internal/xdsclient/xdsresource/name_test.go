@@ -22,7 +22,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/internal/envconfig"
+	"google.golang.org/grpcv54/internal/envconfig"
 )
 
 func TestParseName(t *testing.T) {

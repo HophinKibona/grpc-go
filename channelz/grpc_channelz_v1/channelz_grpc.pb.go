@@ -29,9 +29,9 @@ package grpc_channelz_v1
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "google.golang.org/grpcv54"
+	codes "google.golang.org/grpcv54/codes"
+	status "google.golang.org/grpcv54/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -51,7 +51,7 @@ const (
 
 // ChannelzClient is the client API for Channelz service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpcv54/?tab=doc#ClientConn.NewStream.
 type ChannelzClient interface {
 	// Gets all root channels (i.e. channels the application has directly
 	// created). This does not include subchannels nor non-top level channels.

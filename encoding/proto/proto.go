@@ -24,7 +24,7 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/encoding"
+	"google.golang.org/grpcv54/encoding"
 )
 
 // Name is the name registered for the proto compressor.

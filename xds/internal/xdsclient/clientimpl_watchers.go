@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource"
 )
 
 // This is only required temporarily, while we modify the

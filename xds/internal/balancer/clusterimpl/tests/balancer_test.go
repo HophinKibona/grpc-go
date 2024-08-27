@@ -28,19 +28,19 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/grpctest"
+	"google.golang.org/grpcv54/internal/stubserver"
+	"google.golang.org/grpcv54/internal/testutils/xds/e2e"
+	"google.golang.org/grpcv54/status"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
-	testgrpc "google.golang.org/grpc/test/grpc_testing"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 
-	_ "google.golang.org/grpc/xds"
+	_ "google.golang.org/grpcv54/xds"
 )
 
 const (

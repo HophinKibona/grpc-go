@@ -24,7 +24,7 @@ https://github.com/grpc/grpc/blob/master/src/proto/grpc/reflection/v1alpha/refle
 
 To register server reflection on a gRPC server:
 
-	import "google.golang.org/grpc/reflection"
+	import "google.golang.org/grpcv54/reflection"
 
 	s := grpc.NewServer()
 	pb.RegisterYourOwnServer(s, &server{})
@@ -34,22 +34,22 @@ To register server reflection on a gRPC server:
 
 	s.Serve(lis)
 */
-package reflection // import "google.golang.org/grpc/reflection"
+package reflection // import "google.golang.org/grpcv54/reflection"
 
 import (
 	"io"
 	"sort"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/status"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protodesc"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"
 
-	v1alphagrpc "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
-	v1alphapb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
+	v1alphagrpc "google.golang.org/grpcv54/reflection/grpc_reflection_v1alpha"
+	v1alphapb "google.golang.org/grpcv54/reflection/grpc_reflection_v1alpha"
 )
 
 // GRPCServer is the interface provided by a gRPC server. It is implemented by

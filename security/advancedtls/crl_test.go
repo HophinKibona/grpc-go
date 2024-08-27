@@ -38,7 +38,7 @@ import (
 	"time"
 
 	lru "github.com/hashicorp/golang-lru"
-	"google.golang.org/grpc/security/advancedtls/testdata"
+	"google.golang.org/grpcv54/security/advancedtls/testdata"
 )
 
 func TestX509NameHash(t *testing.T) {

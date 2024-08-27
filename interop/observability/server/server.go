@@ -26,10 +26,10 @@ import (
 	"net"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/gcp/observability"
-	"google.golang.org/grpc/interop"
+	"google.golang.org/grpcv54/gcp/observability"
+	"google.golang.org/grpcv54/interop"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 var (

@@ -26,11 +26,11 @@ import (
 	"strings"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/testutils/fakegrpclb"
-	"google.golang.org/grpc/testdata"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/alts"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/internal/testutils/fakegrpclb"
+	"google.golang.org/grpcv54/testdata"
 )
 
 var (

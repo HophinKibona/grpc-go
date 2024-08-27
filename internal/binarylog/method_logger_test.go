@@ -27,9 +27,9 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	binlogpb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	binlogpb "google.golang.org/grpcv54/binarylog/grpc_binarylog_v1"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/status"
 	"google.golang.org/protobuf/types/known/durationpb"
 )
 

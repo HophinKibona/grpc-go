@@ -17,8 +17,8 @@
 package internal
 
 import (
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/attributes"
+	"google.golang.org/grpcv54/resolver"
 )
 
 // handshakeClusterNameKey is the type used as the key to store cluster name in

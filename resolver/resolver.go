@@ -26,10 +26,10 @@ import (
 	"net/url"
 	"strings"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpcv54/attributes"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/internal/pretty"
+	"google.golang.org/grpcv54/serviceconfig"
 )
 
 var (

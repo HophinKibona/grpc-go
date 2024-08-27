@@ -26,11 +26,11 @@ import (
 	"testing"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	rlsgrpc "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	rlsgrpc "google.golang.org/grpcv54/internal/proto/grpc_lookup_v1"
+	rlspb "google.golang.org/grpcv54/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpcv54/internal/testutils"
+	"google.golang.org/grpcv54/status"
 )
 
 // RouteLookupResponse wraps an RLS response and the associated error to be sent

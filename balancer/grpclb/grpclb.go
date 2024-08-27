@@ -20,7 +20,7 @@
 //
 // To install grpclb balancer, import this package as:
 //
-//	import _ "google.golang.org/grpc/balancer/grpclb"
+//	import _ "google.golang.org/grpcv54/balancer/grpclb"
 package grpclb
 
 import (
@@ -31,18 +31,18 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	grpclbstate "google.golang.org/grpc/balancer/grpclb/state"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/resolver/dns"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/balancer"
+	grpclbstate "google.golang.org/grpcv54/balancer/grpclb/state"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/internal/backoff"
+	"google.golang.org/grpcv54/internal/resolver/dns"
+	"google.golang.org/grpcv54/resolver"
 
 	durationpb "github.com/golang/protobuf/ptypes/duration"
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
+	lbpb "google.golang.org/grpcv54/balancer/grpclb/grpc_lb_v1"
 )
 
 const (

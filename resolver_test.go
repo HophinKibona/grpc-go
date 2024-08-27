@@ -24,8 +24,8 @@ import (
 	"net"
 	"testing"
 
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/resolver"
 )
 
 type wrapResolverBuilder struct {

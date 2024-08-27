@@ -25,19 +25,19 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/channelz"
-	imetadata "google.golang.org/grpc/internal/metadata"
-	"google.golang.org/grpc/internal/stubserver"
-	rrutil "google.golang.org/grpc/internal/testutils/roundrobin"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/channelz"
+	imetadata "google.golang.org/grpcv54/internal/metadata"
+	"google.golang.org/grpcv54/internal/stubserver"
+	rrutil "google.golang.org/grpcv54/internal/testutils/roundrobin"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/resolver"
+	"google.golang.org/grpcv54/resolver/manual"
+	"google.golang.org/grpcv54/status"
 
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 )
 
 const rrServiceConfig = `{"loadBalancingConfig": [{"round_robin":{}}]}`

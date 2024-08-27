@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/authz"
+	"google.golang.org/grpcv54/authz"
 )
 
 func createTmpPolicyFile(t *testing.T, dirSuffix string, policy []byte) string {

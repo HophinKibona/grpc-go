@@ -1,4 +1,4 @@
-module google.golang.org/grpc/test/tools
+module google.golang.org/grpcv54/test/tools
 
 go 1.14
 

@@ -24,7 +24,7 @@ import (
 	"testing"
 
 	cpb "google.golang.org/genproto/googleapis/rpc/code"
-	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpcv54/internal/grpctest"
 )
 
 type s struct {

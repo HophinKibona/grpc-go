@@ -18,8 +18,8 @@
 package xdsclient
 
 import (
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/load"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/bootstrap"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/load"
 )
 
 // ReportLoad starts a load reporting stream to the given server. All load

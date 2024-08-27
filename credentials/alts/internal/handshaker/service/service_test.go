@@ -21,7 +21,7 @@ package service
 import (
 	"testing"
 
-	grpc "google.golang.org/grpc"
+	grpc "google.golang.org/grpcv54"
 )
 
 const (

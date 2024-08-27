@@ -25,7 +25,7 @@ import (
 	"regexp"
 	"testing"
 
-	"google.golang.org/grpc/internal/xds/matcher"
+	"google.golang.org/grpcv54/internal/xds/matcher"
 )
 
 func TestDNSMatch(t *testing.T) {

@@ -25,11 +25,11 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/load"
-	"google.golang.org/grpc/xds/internal/xdsclient/transport"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"google.golang.org/grpcv54/internal/grpclog"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/bootstrap"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/load"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/transport"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource"
 	"google.golang.org/protobuf/types/known/anypb"
 )
 

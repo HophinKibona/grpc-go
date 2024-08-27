@@ -26,11 +26,11 @@ import (
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/tag"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/stats"
+	"google.golang.org/grpcv54/status"
 )
 
 var logger = grpclog.Component("opencensus-instrumentation")

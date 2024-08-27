@@ -24,7 +24,7 @@ import (
 	"fmt"
 
 	"github.com/golang/glog"
-	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpcv54/grpclog"
 )
 
 const d = 2

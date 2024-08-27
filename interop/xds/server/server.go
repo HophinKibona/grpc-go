@@ -28,19 +28,19 @@ import (
 	"os"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/admin"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/health"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/reflection"
-	"google.golang.org/grpc/xds"
+	"google.golang.org/grpcv54/admin"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/health"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/reflection"
+	"google.golang.org/grpcv54/xds"
 
-	xdscreds "google.golang.org/grpc/credentials/xds"
-	healthgrpc "google.golang.org/grpc/health/grpc_health_v1"
-	healthpb "google.golang.org/grpc/health/grpc_health_v1"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	xdscreds "google.golang.org/grpcv54/credentials/xds"
+	healthgrpc "google.golang.org/grpcv54/health/grpc_health_v1"
+	healthpb "google.golang.org/grpcv54/health/grpc_health_v1"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
+	testpb "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 var (

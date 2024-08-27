@@ -37,7 +37,7 @@ import (
 
 	"golang.org/x/crypto/cryptobyte"
 	cbasn1 "golang.org/x/crypto/cryptobyte/asn1"
-	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpcv54/grpclog"
 )
 
 var grpclogLogger = grpclog.Component("advancedtls")

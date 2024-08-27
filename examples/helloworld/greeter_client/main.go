@@ -26,8 +26,8 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
+	"google.golang.org/grpcv54/credentials/insecure"
+	pb "google.golang.org/grpcv54/examples/helloworld/helloworld"
 )
 
 const (

@@ -80,16 +80,16 @@ SOURCES=(
 # Note that the protos listed here are all for testing purposes. All protos to
 # be used externally should have a go_package option (and they don't need to be
 # listed here).
-OPTS=Mgrpc/core/stats.proto=google.golang.org/grpc/interop/grpc_testing/core,\
-Mgrpc/testing/benchmark_service.proto=google.golang.org/grpc/interop/grpc_testing,\
-Mgrpc/testing/stats.proto=google.golang.org/grpc/interop/grpc_testing,\
-Mgrpc/testing/report_qps_scenario_service.proto=google.golang.org/grpc/interop/grpc_testing,\
-Mgrpc/testing/messages.proto=google.golang.org/grpc/interop/grpc_testing,\
-Mgrpc/testing/worker_service.proto=google.golang.org/grpc/interop/grpc_testing,\
-Mgrpc/testing/control.proto=google.golang.org/grpc/interop/grpc_testing,\
-Mgrpc/testing/test.proto=google.golang.org/grpc/interop/grpc_testing,\
-Mgrpc/testing/payloads.proto=google.golang.org/grpc/interop/grpc_testing,\
-Mgrpc/testing/empty.proto=google.golang.org/grpc/interop/grpc_testing
+OPTS=Mgrpc/core/stats.proto=google.golang.org/grpcv54/interop/grpc_testing/core,\
+Mgrpc/testing/benchmark_service.proto=google.golang.org/grpcv54/interop/grpc_testing,\
+Mgrpc/testing/stats.proto=google.golang.org/grpcv54/interop/grpc_testing,\
+Mgrpc/testing/report_qps_scenario_service.proto=google.golang.org/grpcv54/interop/grpc_testing,\
+Mgrpc/testing/messages.proto=google.golang.org/grpcv54/interop/grpc_testing,\
+Mgrpc/testing/worker_service.proto=google.golang.org/grpcv54/interop/grpc_testing,\
+Mgrpc/testing/control.proto=google.golang.org/grpcv54/interop/grpc_testing,\
+Mgrpc/testing/test.proto=google.golang.org/grpcv54/interop/grpc_testing,\
+Mgrpc/testing/payloads.proto=google.golang.org/grpcv54/interop/grpc_testing,\
+Mgrpc/testing/empty.proto=google.golang.org/grpcv54/interop/grpc_testing
 
 for src in ${SOURCES[@]}; do
   echo "protoc ${src}"
@@ -113,11 +113,11 @@ done
 
 # The go_package option in grpc/lookup/v1/rls.proto doesn't match the
 # current location. Move it into the right place.
-mkdir -p ${WORKDIR}/out/google.golang.org/grpc/internal/proto/grpc_lookup_v1
-mv ${WORKDIR}/out/google.golang.org/grpc/lookup/grpc_lookup_v1/* ${WORKDIR}/out/google.golang.org/grpc/internal/proto/grpc_lookup_v1
+mkdir -p ${WORKDIR}/out/google.golang.org/grpcv54/internal/proto/grpc_lookup_v1
+mv ${WORKDIR}/out/google.golang.org/grpcv54/lookup/grpc_lookup_v1/* ${WORKDIR}/out/google.golang.org/grpcv54/internal/proto/grpc_lookup_v1
 
 # grpc_testing_not_regenerate/*.pb.go are not re-generated,
 # see grpc_testing_not_regenerate/README.md for details.
-rm ${WORKDIR}/out/google.golang.org/grpc/reflection/grpc_testing_not_regenerate/*.pb.go
+rm ${WORKDIR}/out/google.golang.org/grpcv54/reflection/grpc_testing_not_regenerate/*.pb.go
 
-cp -R ${WORKDIR}/out/google.golang.org/grpc/* .
+cp -R ${WORKDIR}/out/google.golang.org/grpcv54/* .

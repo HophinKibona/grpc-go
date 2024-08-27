@@ -27,9 +27,9 @@ import (
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/interpreter"
 	expr "google.golang.org/genproto/googleapis/api/expr/v1alpha1"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/peer"
 	"google.golang.org/protobuf/proto"
 )
 

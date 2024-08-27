@@ -31,14 +31,14 @@ import (
 
 	"golang.org/x/sys/unix"
 	"google.golang.org/grpc"
-	_ "google.golang.org/grpc/balancer/grpclb"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/credentials/google"
-	_ "google.golang.org/grpc/xds/googledirectpath"
+	_ "google.golang.org/grpcv54/balancer/grpclb"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/alts"
+	"google.golang.org/grpcv54/credentials/google"
+	_ "google.golang.org/grpcv54/xds/googledirectpath"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
+	testpb "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 var (

@@ -30,21 +30,21 @@ import (
 
 	"golang.org/x/oauth2"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/credentials/google"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/credentials/oauth"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/interop"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/testdata"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/alts"
+	"google.golang.org/grpcv54/credentials/google"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/credentials/oauth"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/interop"
+	"google.golang.org/grpcv54/resolver"
+	"google.golang.org/grpcv54/testdata"
 
-	_ "google.golang.org/grpc/balancer/grpclb"      // Register the grpclb load balancing policy.
-	_ "google.golang.org/grpc/balancer/rls"         // Register the RLS load balancing policy.
-	_ "google.golang.org/grpc/xds/googledirectpath" // Register xDS resolver required for c2p directpath.
+	_ "google.golang.org/grpcv54/balancer/grpclb"      // Register the grpclb load balancing policy.
+	_ "google.golang.org/grpcv54/balancer/rls"         // Register the RLS load balancing policy.
+	_ "google.golang.org/grpcv54/xds/googledirectpath" // Register xDS resolver required for c2p directpath.
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 const (

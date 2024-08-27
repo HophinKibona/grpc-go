@@ -32,12 +32,12 @@ import (
 	v3typepb "github.com/envoyproxy/go-control-plane/envoy/type/v3"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/internal/grpctest"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/peer"
+	"google.golang.org/grpcv54/status"
 )
 
 type s struct {

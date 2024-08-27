@@ -21,10 +21,10 @@ package base
 import (
 	"testing"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/attributes"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/resolver"
 )
 
 type testClientConn struct {

@@ -30,12 +30,12 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/credentials/tls/certprovider/pemfile"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
-	"google.golang.org/grpc/security/advancedtls/internal/testutils"
-	"google.golang.org/grpc/security/advancedtls/testdata"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/tls/certprovider"
+	"google.golang.org/grpcv54/credentials/tls/certprovider/pemfile"
+	pb "google.golang.org/grpcv54/examples/helloworld/helloworld"
+	"google.golang.org/grpcv54/security/advancedtls/internal/testutils"
+	"google.golang.org/grpcv54/security/advancedtls/testdata"
 )
 
 const (

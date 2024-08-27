@@ -29,12 +29,12 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	lbgrpc "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/status"
+	lbgrpc "google.golang.org/grpcv54/balancer/grpclb/grpc_lb_v1"
+	lbpb "google.golang.org/grpcv54/balancer/grpclb/grpc_lb_v1"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/internal/pretty"
+	"google.golang.org/grpcv54/status"
 )
 
 var logger = grpclog.Component("fake_grpclb")

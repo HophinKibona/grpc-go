@@ -28,8 +28,8 @@ import (
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/trace"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/stats/opencensus"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/stats/opencensus"
 )
 
 var (

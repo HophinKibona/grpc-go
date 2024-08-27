@@ -25,7 +25,7 @@ import (
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpcv54/internal/grpctest"
 )
 
 const ignorePrefix = "XXX_"

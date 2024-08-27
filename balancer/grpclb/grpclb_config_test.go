@@ -23,7 +23,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpcv54/serviceconfig"
 )
 
 func (s) TestParse(t *testing.T) {

@@ -28,17 +28,17 @@ import (
 	"time"
 	"unsafe"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/balancergroup"
-	"google.golang.org/grpc/internal/buffer"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/internal/backoff"
+	"google.golang.org/grpcv54/internal/balancergroup"
+	"google.golang.org/grpcv54/internal/buffer"
+	internalgrpclog "google.golang.org/grpcv54/internal/grpclog"
+	"google.golang.org/grpcv54/internal/grpcsync"
+	"google.golang.org/grpcv54/internal/pretty"
+	"google.golang.org/grpcv54/resolver"
 )
 
 const (

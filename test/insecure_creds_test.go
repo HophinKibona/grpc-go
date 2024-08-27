@@ -25,14 +25,14 @@ import (
 	"testing"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/stubserver"
+	"google.golang.org/grpcv54/peer"
+	"google.golang.org/grpcv54/status"
 
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 )
 
 // testLegacyPerRPCCredentials is a PerRPCCredentials that has yet incorporated security level.

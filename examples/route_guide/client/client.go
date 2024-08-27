@@ -31,10 +31,10 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/examples/data"
-	pb "google.golang.org/grpc/examples/route_guide/routeguide"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/examples/data"
+	pb "google.golang.org/grpcv54/examples/route_guide/routeguide"
 )
 
 var (

@@ -26,9 +26,9 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	ecpb "google.golang.org/grpc/examples/features/proto/echo"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/credentials/insecure"
+	ecpb "google.golang.org/grpcv54/examples/features/proto/echo"
+	"google.golang.org/grpcv54/resolver"
 )
 
 const (

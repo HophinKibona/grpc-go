@@ -19,14 +19,14 @@
 // Package stats is for collecting and reporting various network and RPC stats.
 // This package is for monitoring purpose only. All fields are read-only.
 // All APIs are experimental.
-package stats // import "google.golang.org/grpc/stats"
+package stats // import "google.golang.org/grpcv54/stats"
 
 import (
 	"context"
 	"net"
 	"time"
 
-	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpcv54/metadata"
 )
 
 // RPCStats contains stats information about RPCs.

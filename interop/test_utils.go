@@ -32,15 +32,15 @@ import (
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/benchmark/stats"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/benchmark/stats"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/peer"
+	"google.golang.org/grpcv54/status"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
+	testpb "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 var (

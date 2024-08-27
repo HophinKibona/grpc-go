@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/internal/wrr"
+	"google.golang.org/grpcv54/internal/wrr"
 )
 
 // testWRR is a deterministic WRR implementation.

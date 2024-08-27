@@ -24,15 +24,15 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/rls/internal/adaptive"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/pretty"
-	rlsgrpc "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/balancer/rls/internal/adaptive"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal"
+	internalgrpclog "google.golang.org/grpcv54/internal/grpclog"
+	"google.golang.org/grpcv54/internal/pretty"
+	rlsgrpc "google.golang.org/grpcv54/internal/proto/grpc_lookup_v1"
+	rlspb "google.golang.org/grpcv54/internal/proto/grpc_lookup_v1"
 )
 
 var newAdaptiveThrottler = func() adaptiveThrottler { return adaptive.New() }

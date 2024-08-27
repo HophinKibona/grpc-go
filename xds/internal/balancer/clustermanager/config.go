@@ -21,8 +21,8 @@ package clustermanager
 import (
 	"encoding/json"
 
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
+	internalserviceconfig "google.golang.org/grpcv54/internal/serviceconfig"
+	"google.golang.org/grpcv54/serviceconfig"
 )
 
 type childConfig struct {

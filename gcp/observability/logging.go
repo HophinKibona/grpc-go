@@ -32,13 +32,13 @@ import (
 	"go.opencensus.io/trace"
 
 	"google.golang.org/grpc"
-	binlogpb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/binarylog"
-	iblog "google.golang.org/grpc/internal/binarylog"
-	"google.golang.org/grpc/internal/grpcutil"
-	"google.golang.org/grpc/stats/opencensus"
+	binlogpb "google.golang.org/grpcv54/binarylog/grpc_binarylog_v1"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/internal/binarylog"
+	iblog "google.golang.org/grpcv54/internal/binarylog"
+	"google.golang.org/grpcv54/internal/grpcutil"
+	"google.golang.org/grpcv54/stats/opencensus"
 )
 
 var lExporter loggingExporter

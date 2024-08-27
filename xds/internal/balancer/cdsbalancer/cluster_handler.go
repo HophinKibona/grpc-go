@@ -20,8 +20,8 @@ import (
 	"errors"
 	"sync"
 
-	"google.golang.org/grpc/xds/internal/xdsclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"google.golang.org/grpcv54/xds/internal/xdsclient"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource"
 )
 
 const maxDepth = 16

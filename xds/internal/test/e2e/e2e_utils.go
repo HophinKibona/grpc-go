@@ -21,7 +21,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
+	channelzpb "google.golang.org/grpcv54/channelz/grpc_channelz_v1"
 )
 
 func verifySubConnStates(t *testing.T, scs []*channelzpb.Subchannel, want map[channelzpb.ChannelConnectivityState_State]int) {

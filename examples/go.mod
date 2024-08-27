@@ -1,4 +1,4 @@
-module google.golang.org/grpc/examples
+module google.golang.org/grpcv54/examples
 
 go 1.17
 
@@ -7,7 +7,7 @@ require (
 	github.com/golang/protobuf v1.5.2
 	golang.org/x/oauth2 v0.4.0
 	google.golang.org/genproto v0.0.0-20230110181048-76db0878b65f
-	google.golang.org/grpc v1.52.0
+	google.golang.org/grpcv54 v1.52.0
 	google.golang.org/protobuf v1.28.1
 )
 
@@ -25,4 +25,4 @@ require (
 	google.golang.org/appengine v1.6.7 // indirect
 )
 
-replace google.golang.org/grpc => ../
+replace google.golang.org/grpcv54 => ../

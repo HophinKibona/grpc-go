@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"testing"
 
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/bootstrap"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource/version"
 )
 
 // BuildResourceName returns the resource name in the format of an xdstp://

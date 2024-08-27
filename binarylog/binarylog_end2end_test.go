@@ -30,17 +30,17 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/binarylog"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/grpclog"
-	iblog "google.golang.org/grpc/internal/binarylog"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/binarylog"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/grpclog"
+	iblog "google.golang.org/grpcv54/internal/binarylog"
+	"google.golang.org/grpcv54/internal/grpctest"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/status"
 
-	binlogpb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	binlogpb "google.golang.org/grpcv54/binarylog/grpc_binarylog_v1"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
+	testpb "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 var grpclogLogger = grpclog.Component("binarylog")

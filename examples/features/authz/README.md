@@ -1,6 +1,6 @@
 # RBAC authorization
 
-This example uses the `StaticInterceptor` from the `google.golang.org/grpc/authz`
+This example uses the `StaticInterceptor` from the `google.golang.org/grpcv54/authz`
 package. It uses a header based RBAC policy to match each gRPC method to a
 required role. For simplicity, the context is injected with mock metadata which
 includes the required roles, but this should be fetched from an appropriate

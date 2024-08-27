@@ -18,8 +18,8 @@
 package xdsresource
 
 import (
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"google.golang.org/grpcv54/internal/pretty"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource/version"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 )

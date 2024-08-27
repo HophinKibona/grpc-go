@@ -31,13 +31,13 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	xdscreds "google.golang.org/grpc/credentials/xds"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
-	"google.golang.org/grpc/health"
-	healthgrpc "google.golang.org/grpc/health/grpc_health_v1"
-	healthpb "google.golang.org/grpc/health/grpc_health_v1"
-	"google.golang.org/grpc/xds"
+	"google.golang.org/grpcv54/credentials/insecure"
+	xdscreds "google.golang.org/grpcv54/credentials/xds"
+	pb "google.golang.org/grpcv54/examples/helloworld/helloworld"
+	"google.golang.org/grpcv54/health"
+	healthgrpc "google.golang.org/grpcv54/health/grpc_health_v1"
+	healthpb "google.golang.org/grpcv54/health/grpc_health_v1"
+	"google.golang.org/grpcv54/xds"
 )
 
 var (

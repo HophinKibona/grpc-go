@@ -24,8 +24,8 @@ import (
 	"strconv"
 
 	xxhash "github.com/cespare/xxhash/v2"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/internal/grpclog"
+	"google.golang.org/grpcv54/resolver"
 )
 
 type ring struct {

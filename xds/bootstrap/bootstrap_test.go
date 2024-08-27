@@ -21,7 +21,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpcv54/credentials"
 )
 
 const testCredsBuilderName = "test_creds"

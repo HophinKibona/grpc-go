@@ -24,9 +24,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
+	"google.golang.org/grpcv54/internal/envconfig"
+	"google.golang.org/grpcv54/internal/grpcsync"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/bootstrap"
 )
 
 const (

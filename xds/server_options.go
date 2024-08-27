@@ -22,7 +22,7 @@ import (
 	"net"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpcv54/connectivity"
 )
 
 type serverOptions struct {

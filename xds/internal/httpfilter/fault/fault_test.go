@@ -34,15 +34,15 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"github.com/google/uuid"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/bootstrap"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/grpcrand"
+	"google.golang.org/grpcv54/internal/grpctest"
+	"google.golang.org/grpcv54/internal/testutils"
+	"google.golang.org/grpcv54/internal/testutils/xds/bootstrap"
+	"google.golang.org/grpcv54/internal/testutils/xds/e2e"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/status"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
 	v3listenerpb "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
@@ -50,10 +50,10 @@ import (
 	fpb "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/http/fault/v3"
 	v3httppb "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/http_connection_manager/v3"
 	tpb "github.com/envoyproxy/go-control-plane/envoy/type/v3"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 
-	_ "google.golang.org/grpc/xds/internal/balancer" // Register the balancers.
-	_ "google.golang.org/grpc/xds/internal/resolver" // Register the xds_resolver.
+	_ "google.golang.org/grpcv54/xds/internal/balancer" // Register the balancers.
+	_ "google.golang.org/grpcv54/xds/internal/resolver" // Register the xds_resolver.
 )
 
 const defaultTestTimeout = 10 * time.Second

@@ -31,9 +31,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/internal/testutils"
+	"google.golang.org/grpcv54/status"
 
 	v3discoverygrpc "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
 	v3discoverypb "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"

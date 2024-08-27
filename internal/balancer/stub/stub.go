@@ -22,8 +22,8 @@ package stub
 import (
 	"encoding/json"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/serviceconfig"
 )
 
 // BalancerFuncs contains all balancer.Balancer functions with a preceding

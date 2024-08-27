@@ -35,7 +35,7 @@ import (
 	"net"
 	"strings"
 
-	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpcv54/credentials"
 )
 
 // info contains the auth information for a local connection.

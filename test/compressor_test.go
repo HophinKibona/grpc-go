@@ -30,13 +30,13 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/encoding"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/encoding"
+	"google.golang.org/grpcv54/internal/envconfig"
+	"google.golang.org/grpcv54/internal/stubserver"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/status"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 )
 
 func (s) TestCompressServerHasNoSupport(t *testing.T) {

@@ -31,16 +31,16 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/interop"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/testdata"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/interop"
+	"google.golang.org/grpcv54/status"
+	"google.golang.org/grpcv54/testdata"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	metricspb "google.golang.org/grpc/stress/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
+	metricspb "google.golang.org/grpcv54/stress/grpc_testing"
 )
 
 var (

@@ -17,7 +17,7 @@
  */
 
 // Package stubserver is a stubbable implementation of
-// google.golang.org/grpc/test/grpc_testing for testing purposes.
+// google.golang.org/grpcv54/test/grpc_testing for testing purposes.
 package stubserver
 
 import (
@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/resolver"
+	"google.golang.org/grpcv54/resolver/manual"
+	"google.golang.org/grpcv54/serviceconfig"
 
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testpb "google.golang.org/grpcv54/test/grpc_testing"
 )
 
 // StubServer is a server that is easy to customize within individual test

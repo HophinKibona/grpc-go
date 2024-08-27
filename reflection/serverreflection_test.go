@@ -28,8 +28,8 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal/grpctest"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protodesc"
 	"google.golang.org/protobuf/reflect/protoreflect"
@@ -37,10 +37,10 @@ import (
 	"google.golang.org/protobuf/types/descriptorpb"
 	"google.golang.org/protobuf/types/dynamicpb"
 
-	v1alphagrpc "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
-	v1alphapb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
-	pb "google.golang.org/grpc/reflection/grpc_testing"
-	pbv3 "google.golang.org/grpc/reflection/grpc_testing_not_regenerate"
+	v1alphagrpc "google.golang.org/grpcv54/reflection/grpc_reflection_v1alpha"
+	v1alphapb "google.golang.org/grpcv54/reflection/grpc_reflection_v1alpha"
+	pb "google.golang.org/grpcv54/reflection/grpc_testing"
+	pbv3 "google.golang.org/grpcv54/reflection/grpc_testing_not_regenerate"
 )
 
 var (

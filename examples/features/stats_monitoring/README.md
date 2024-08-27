@@ -1,6 +1,6 @@
 # Stats Monitoring Handler
 
-This example demonstrates the use of the [`stats`](https://pkg.go.dev/google.golang.org/grpc/stats) package for reporting various  
+This example demonstrates the use of the [`stats`](https://pkg.go.dev/google.golang.org/grpcv54/stats) package for reporting various  
 network and RPC stats.  
 _Note that all fields are READ-ONLY and the APIs of the `stats` package are  
 experimental_.
@@ -18,7 +18,7 @@ go run client/main.go
 ## Explanation
 
 gRPC provides a mechanism to hook on to various events (phases) of the  
-request-response network cycle through the [`stats.Handler`](https://pkg.go.dev/google.golang.org/grpc/stats#Handler) interface. To access  
+request-response network cycle through the [`stats.Handler`](https://pkg.go.dev/google.golang.org/grpcv54/stats#Handler) interface. To access  
 these events, a concrete type that implements `stats.Handler` should be passed to  
 `grpc.WithStatsHandler()` on the client side and `grpc.StatsHandler()` on the  
 server side.
@@ -34,7 +34,7 @@ Similarly, the `HandleConn(context.Context, ConnStats)` method on `stats.Handler
 is called twice, once at the beginning of the connection with `*stats.ConnBegin`  
 and once at the end with `*stats.ConnEnd`.
 
-The [`stats.Handler`](https://pkg.go.dev/google.golang.org/grpc/stats#Handler) interface also provides  
+The [`stats.Handler`](https://pkg.go.dev/google.golang.org/grpcv54/stats#Handler) interface also provides  
 `TagRPC(context.Context, *RPCTagInfo) context.Context` and  
 `TagConn(context.Context, *ConnTagInfo) context.Context` methods. These methods  
 are mainly used to attach network related information to the given context.
@@ -54,5 +54,5 @@ The context returned from
   The context used for the rest lifetime of the RPC will be derived from  
   this context.
 
-NOTE: The [stats](https://pkg.go.dev/google.golang.org/grpc/stats) package should only be used for network monitoring purposes,  
+NOTE: The [stats](https://pkg.go.dev/google.golang.org/grpcv54/stats) package should only be used for network monitoring purposes,  
 and not as an alternative to [interceptors](https://github.com/grpc/grpc-go/blob/master/examples/features/metadata).

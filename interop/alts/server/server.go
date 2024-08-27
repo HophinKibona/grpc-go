@@ -26,12 +26,12 @@ import (
 	"strings"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/interop"
-	"google.golang.org/grpc/tap"
+	"google.golang.org/grpcv54/credentials/alts"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/interop"
+	"google.golang.org/grpcv54/tap"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 const (

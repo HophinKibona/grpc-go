@@ -23,10 +23,10 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/balancer/base"
+	"google.golang.org/grpcv54/connectivity"
+	internalgrpclog "google.golang.org/grpcv54/internal/grpclog"
 )
 
 // childPolicyWrapper is a reference counted wrapper around a child policy.

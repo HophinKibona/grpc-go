@@ -26,10 +26,10 @@ import (
 	"unsafe"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/xds/rbac"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/internal/xds/rbac"
+	"google.golang.org/grpcv54/status"
 )
 
 var logger = grpclog.Component("authz")

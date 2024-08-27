@@ -24,10 +24,10 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/balancer/base"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/resolver"
 )
 
 var errBalancerClosed = errors.New("gracefulSwitchBalancer is closed")

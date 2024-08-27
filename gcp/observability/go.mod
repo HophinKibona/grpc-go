@@ -1,4 +1,4 @@
-module google.golang.org/grpc/gcp/observability
+module google.golang.org/grpcv54/gcp/observability
 
 go 1.17
 
@@ -10,8 +10,8 @@ require (
 	go.opencensus.io v0.24.0
 	golang.org/x/oauth2 v0.4.0
 	google.golang.org/api v0.103.0
-	google.golang.org/grpc v1.52.0
-	google.golang.org/grpc/stats/opencensus v0.0.0-20230221205128-8702a2ebf4b0
+	google.golang.org/grpcv54 v1.52.0
+	google.golang.org/grpcv54/stats/opencensus v0.0.0-20230221205128-8702a2ebf4b0
 )
 
 require (
@@ -38,6 +38,6 @@ require (
 	google.golang.org/protobuf v1.28.1 // indirect
 )
 
-replace google.golang.org/grpc => ../../
+replace google.golang.org/grpcv54 => ../../
 
-replace google.golang.org/grpc/stats/opencensus => ../../stats/opencensus
+replace google.golang.org/grpcv54/stats/opencensus => ../../stats/opencensus

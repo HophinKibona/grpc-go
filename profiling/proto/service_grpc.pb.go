@@ -22,9 +22,9 @@ package proto
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "google.golang.org/grpcv54"
+	codes "google.golang.org/grpcv54/codes"
+	status "google.golang.org/grpcv54/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -39,7 +39,7 @@ const (
 
 // ProfilingClient is the client API for Profiling service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpcv54/?tab=doc#ClientConn.NewStream.
 type ProfilingClient interface {
 	// Enable allows users to toggle profiling on and off remotely.
 	Enable(ctx context.Context, in *EnableRequest, opts ...grpc.CallOption) (*EnableResponse, error)

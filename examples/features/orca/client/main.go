@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/orca"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/connectivity"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/orca"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"
-	pb "google.golang.org/grpc/examples/features/proto/echo"
+	pb "google.golang.org/grpcv54/examples/features/proto/echo"
 )
 
 var addr = flag.String("addr", "localhost:50051", "the address to connect to")

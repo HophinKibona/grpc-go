@@ -37,13 +37,13 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"google.golang.org/grpc/internal/envconfig"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/xds/internal/httpfilter"
-	"google.golang.org/grpc/xds/internal/httpfilter/router"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"google.golang.org/grpcv54/internal/envconfig"
+	iresolver "google.golang.org/grpcv54/internal/resolver"
+	"google.golang.org/grpcv54/internal/testutils"
+	"google.golang.org/grpcv54/internal/testutils/xds/e2e"
+	"google.golang.org/grpcv54/xds/internal/httpfilter"
+	"google.golang.org/grpcv54/xds/internal/httpfilter/router"
+	"google.golang.org/grpcv54/xds/internal/xdsclient/xdsresource/version"
 )
 
 const (

@@ -24,7 +24,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/internal/backoff"
+	"google.golang.org/grpcv54/internal/backoff"
 )
 
 var (

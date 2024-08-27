@@ -21,7 +21,7 @@ package xdsclient
 import (
 	"context"
 
-	"google.golang.org/grpc/internal/buffer"
+	"google.golang.org/grpcv54/internal/buffer"
 )
 
 // callbackSerializer provides a mechanism to schedule callbacks in a

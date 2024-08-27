@@ -31,18 +31,18 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/admin"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/credentials/xds"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/reflection"
-	"google.golang.org/grpc/status"
-	_ "google.golang.org/grpc/xds"
+	"google.golang.org/grpcv54/admin"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/credentials/xds"
+	"google.golang.org/grpcv54/grpclog"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/peer"
+	"google.golang.org/grpcv54/reflection"
+	"google.golang.org/grpcv54/status"
+	_ "google.golang.org/grpcv54/xds"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpcv54/interop/grpc_testing"
+	testpb "google.golang.org/grpcv54/interop/grpc_testing"
 )
 
 func init() {

@@ -23,9 +23,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/orca"
+	"google.golang.org/grpcv54/internal/pretty"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/orca"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"
 )

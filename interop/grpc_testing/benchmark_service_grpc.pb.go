@@ -25,9 +25,9 @@ package grpc_testing
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "google.golang.org/grpcv54"
+	codes "google.golang.org/grpcv54/codes"
+	status "google.golang.org/grpcv54/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -45,7 +45,7 @@ const (
 
 // BenchmarkServiceClient is the client API for BenchmarkService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpcv54/?tab=doc#ClientConn.NewStream.
 type BenchmarkServiceClient interface {
 	// One request followed by one response.
 	// The server returns the client payload as-is.

@@ -29,10 +29,10 @@ import (
 
 	"golang.org/x/oauth2"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/oauth"
-	"google.golang.org/grpc/examples/data"
-	ecpb "google.golang.org/grpc/examples/features/proto/echo"
+	"google.golang.org/grpcv54/credentials"
+	"google.golang.org/grpcv54/credentials/oauth"
+	"google.golang.org/grpcv54/examples/data"
+	ecpb "google.golang.org/grpcv54/examples/features/proto/echo"
 )
 
 var addr = flag.String("addr", "localhost:50051", "the address to connect to")

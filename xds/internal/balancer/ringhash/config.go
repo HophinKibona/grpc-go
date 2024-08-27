@@ -22,8 +22,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpcv54/internal/envconfig"
+	"google.golang.org/grpcv54/serviceconfig"
 )
 
 // LBConfig is the balancer config for ring_hash balancer.

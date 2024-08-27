@@ -30,12 +30,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpcrand"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/httpfilter"
+	"google.golang.org/grpcv54/codes"
+	"google.golang.org/grpcv54/internal/grpcrand"
+	iresolver "google.golang.org/grpcv54/internal/resolver"
+	"google.golang.org/grpcv54/metadata"
+	"google.golang.org/grpcv54/status"
+	"google.golang.org/grpcv54/xds/internal/httpfilter"
 	"google.golang.org/protobuf/types/known/anypb"
 
 	cpb "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/common/fault/v3"

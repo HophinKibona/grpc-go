@@ -27,13 +27,13 @@ import (
 
 	"github.com/golang/protobuf/ptypes"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/rls/internal/keys"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/pretty"
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpcv54/balancer"
+	"google.golang.org/grpcv54/balancer/rls/internal/keys"
+	"google.golang.org/grpcv54/internal"
+	"google.golang.org/grpcv54/internal/pretty"
+	rlspb "google.golang.org/grpcv54/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpcv54/resolver"
+	"google.golang.org/grpcv54/serviceconfig"
 	"google.golang.org/protobuf/encoding/protojson"
 )
 

@@ -23,8 +23,8 @@ import (
 	"strings"
 	"testing"
 
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
+	"google.golang.org/grpcv54/credentials/insecure"
+	"google.golang.org/grpcv54/internal"
 )
 
 func (s) TestAddGlobalDialOptions(t *testing.T) {

@@ -20,8 +20,8 @@ package outlierdetection
 import (
 	"time"
 
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
+	internalserviceconfig "google.golang.org/grpcv54/internal/serviceconfig"
+	"google.golang.org/grpcv54/serviceconfig"
 )
 
 // SuccessRateEjection is parameters for the success rate ejection algorithm.

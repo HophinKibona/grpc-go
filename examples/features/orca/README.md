@@ -24,7 +24,7 @@ along with the trailers at the end of a call.  Both of these mechanisms are
 optional and work independently.
 
 The full ORCA API documentation is available here:
-https://pkg.go.dev/google.golang.org/grpc/orca
+https://pkg.go.dev/google.golang.org/grpcv54/orca
 
 ### Out-of-band Metrics
 
