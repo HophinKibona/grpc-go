@@ -35,21 +35,21 @@ import (
 
 	"golang.org/x/net/trace"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/encoding"
-	"google.golang.org/grpc/encoding/proto"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/binarylog"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/tap"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/credentials"
+	"google.golang.org/grpc-forked/encoding"
+	"google.golang.org/grpc-forked/encoding/proto"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/internal/binarylog"
+	"google.golang.org/grpc-forked/internal/channelz"
+	"google.golang.org/grpc-forked/internal/grpcsync"
+	"google.golang.org/grpc-forked/internal/transport"
+	"google.golang.org/grpc-forked/keepalive"
+	"google.golang.org/grpc-forked/metadata"
+	"google.golang.org/grpc-forked/peer"
+	"google.golang.org/grpc-forked/stats"
+	"google.golang.org/grpc-forked/status"
+	"google.golang.org/grpc-forked/tap"
 )
 
 const (
@@ -769,12 +769,12 @@ var _ http.Handler = (*Server)(nil)
 // To share one port (such as 443 for https) between gRPC and an
 // existing http.Handler, use a root http.Handler such as:
 //
-//   if r.ProtoMajor == 2 && strings.HasPrefix(
-//   	r.Header.Get("Content-Type"), "application/grpc") {
-//   	grpcServer.ServeHTTP(w, r)
-//   } else {
-//   	yourMux.ServeHTTP(w, r)
-//   }
+//	if r.ProtoMajor == 2 && strings.HasPrefix(
+//		r.Header.Get("Content-Type"), "application/grpc") {
+//		grpcServer.ServeHTTP(w, r)
+//	} else {
+//		yourMux.ServeHTTP(w, r)
+//	}
 //
 // Note that ServeHTTP uses Go's HTTP/2 server implementation which is totally
 // separate from grpc-go's HTTP/2 server. Performance and features may vary
@@ -1581,9 +1581,9 @@ func (s *Server) getCodec(contentSubtype string) baseCodec {
 // SetHeader sets the header metadata.
 // When called multiple times, all the provided metadata will be merged.
 // All the metadata will be sent out when one of the following happens:
-//  - grpc.SendHeader() is called;
-//  - The first response is sent out;
-//  - An RPC status is sent out (error or success).
+//   - grpc.SendHeader() is called;
+//   - The first response is sent out;
+//   - An RPC status is sent out (error or success).
 func SetHeader(ctx context.Context, md metadata.MD) error {
 	if md.Len() == 0 {
 		return nil

@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/balancer/base"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/grpclog"
 )
 
 // handlePriorityChange handles priority after EDS adds/removes a
@@ -170,6 +170,7 @@ func (edsImpl *edsBalancerImpl) handlePriorityWithNewState(priority priorityType
 //   - Forward the update
 //   - Set the priority as priorityInUse
 //   - Close all priorities lower than this one
+//
 // - If it's from priorityInUse:
 //   - Forward and do nothing else
 //
@@ -202,13 +203,14 @@ func (edsImpl *edsBalancerImpl) handlePriorityWithNewStateReady(priority priorit
 // An update with state Failure:
 // - If it's from a higher priority:
 //   - Do not forward, and do nothing
+//
 // - If it's from priorityInUse:
 //   - If there's no lower:
-//     - Forward and do nothing else
+//   - Forward and do nothing else
 //   - If there's a lower priority:
-//     - Forward
-//     - Set lower as priorityInUse
-//     - Start lower
+//   - Forward
+//   - Set lower as priorityInUse
+//   - Start lower
 //
 // Caller must make sure priorityInUse is not higher than priority.
 //
@@ -237,6 +239,7 @@ func (edsImpl *edsBalancerImpl) handlePriorityWithNewStateTransientFailure(prior
 // An update with state Connecting:
 // - If it's from a higher priority
 //   - Do nothing
+//
 // - If it's from priorityInUse, the behavior depends on previous state.
 //
 // When new state is Connecting, the behavior depends on previous state. If the

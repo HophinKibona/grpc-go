@@ -7,9 +7,9 @@ import (
 	context "context"
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "google.golang.org/grpc-forked"
+	codes "google.golang.org/grpc-forked/codes"
+	status "google.golang.org/grpc-forked/status"
 	math "math"
 )
 
@@ -136,7 +136,7 @@ const _ = grpc.SupportPackageIsVersion6
 
 // GreeterClient is the client API for Greeter service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc-forked#ClientConn.NewStream.
 type GreeterClient interface {
 	// Sends a greeting
 	SayHello(ctx context.Context, in *HelloRequest, opts ...grpc.CallOption) (*HelloReply, error)

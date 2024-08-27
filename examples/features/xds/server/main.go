@@ -1,3 +1,4 @@
+//go:build go1.11
 // +build go1.11
 
 /*
@@ -32,11 +33,11 @@ import (
 	"strconv"
 	"time"
 
-	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
-	"google.golang.org/grpc/health"
-	healthpb "google.golang.org/grpc/health/grpc_health_v1"
-	"google.golang.org/grpc/reflection"
+	"google.golang.org/grpc-forked"
+	pb "google.golang.org/grpc-forked/examples/helloworld/helloworld"
+	"google.golang.org/grpc-forked/health"
+	healthpb "google.golang.org/grpc-forked/health/grpc_health_v1"
+	"google.golang.org/grpc-forked/reflection"
 )
 
 var help = flag.Bool("help", false, "Print usage information")

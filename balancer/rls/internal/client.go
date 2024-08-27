@@ -22,8 +22,8 @@ import (
 	"context"
 	"time"
 
-	"google.golang.org/grpc"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpc-forked"
+	rlspb "google.golang.org/grpc-forked/balancer/rls/internal/proto/grpc_lookup_v1"
 )
 
 // For gRPC services using RLS, the value of target_type in the
@@ -34,10 +34,10 @@ const grpcTargetType = "grpc"
 // provides non-blocking semantics on top of a blocking unary RPC call.
 //
 // The RLS LB policy creates a new rlsClient object with the following values:
-// * a grpc.ClientConn to the RLS server using appropriate credentials from the
-//   parent channel
-// * dialTarget corresponding to the original user dial target, e.g.
-//   "firestore.googleapis.com".
+//   - a grpc.ClientConn to the RLS server using appropriate credentials from the
+//     parent channel
+//   - dialTarget corresponding to the original user dial target, e.g.
+//     "firestore.googleapis.com".
 //
 // The RLS LB policy uses an adaptive throttler to perform client side
 // throttling and asks this client to make an RPC call only after checking with

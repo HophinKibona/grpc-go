@@ -1,3 +1,4 @@
+//go:build go1.10 && linux && !appengine
 // +build go1.10,linux,!appengine
 
 /*
@@ -28,8 +29,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/channelz"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"google.golang.org/grpc-forked/internal/channelz"
+	testpb "google.golang.org/grpc-forked/test/grpc_testing"
 )
 
 func (s) TestCZSocketMetricsSocketOption(t *testing.T) {

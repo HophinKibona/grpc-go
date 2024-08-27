@@ -23,10 +23,10 @@ import (
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/connectivity"
+	xdsclient "google.golang.org/grpc-forked/xds/internal/client"
+	"google.golang.org/grpc-forked/xds/internal/testutils"
 )
 
 // When a high priority is ready, adding/removing lower locality doesn't cause
@@ -401,8 +401,8 @@ func (s) TestEDSPriority_InitTimeout(t *testing.T) {
 
 // Add localities to existing priorities.
 //
-//  - start with 2 locality with p0 and p1
-//  - add localities to existing p0 and p1
+//   - start with 2 locality with p0 and p1
+//   - add localities to existing p0 and p1
 func (s) TestEDSPriority_MultipleLocalities(t *testing.T) {
 	cc := testutils.NewTestClientConn(t)
 	edsb := newEDSBalancerImpl(cc, nil, nil, nil)

@@ -1,3 +1,4 @@
+//go:build !linux || appengine
 // +build !linux appengine
 
 /*
@@ -21,8 +22,8 @@
 package service
 
 import (
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/internal/channelz"
+	channelzpb "google.golang.org/grpc-forked/channelz/grpc_channelz_v1"
+	"google.golang.org/grpc-forked/internal/channelz"
 )
 
 func sockoptToProto(skopts *channelz.SocketOptionData) []*channelzpb.SocketOption {

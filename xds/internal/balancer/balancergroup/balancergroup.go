@@ -24,15 +24,15 @@ import (
 	"time"
 
 	orcapb "github.com/cncf/udpa/go/udpa/data/orca/v1"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/cache"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/wrr"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/balancer/lrs"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/balancer/base"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/internal/cache"
+	"google.golang.org/grpc-forked/internal/grpclog"
+	"google.golang.org/grpc-forked/internal/wrr"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/xds/internal"
+	"google.golang.org/grpc-forked/xds/internal/balancer/lrs"
 )
 
 // subBalancerWithConfig is used to keep the configurations that will be used to start
@@ -163,18 +163,18 @@ func (s *pickerState) String() string {
 // sub-balancer manager by a high level balancer.
 //
 // Updates from ClientConn are forwarded to sub-balancers
-//  - service config update
-//     - Not implemented
-//  - address update
-//  - subConn state change
-//     - find the corresponding balancer and forward
+//   - service config update
+//   - Not implemented
+//   - address update
+//   - subConn state change
+//   - find the corresponding balancer and forward
 //
 // Actions from sub-balances are forwarded to parent ClientConn
-//  - new/remove SubConn
-//  - picker update and health states change
-//     - sub-pickers are grouped into a group-picker
-//     - aggregated connectivity state is the overall state of all pickers.
-//  - resolveNow
+//   - new/remove SubConn
+//   - picker update and health states change
+//   - sub-pickers are grouped into a group-picker
+//   - aggregated connectivity state is the overall state of all pickers.
+//   - resolveNow
 //
 // Sub-balancers are only built when the balancer group is started. If the
 // balancer group is closed, the sub-balancers are also closed. And it's

@@ -23,14 +23,14 @@ import (
 	"context"
 	"fmt"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc-forked"
+	"google.golang.org/grpc-forked/attributes"
+	"google.golang.org/grpc-forked/internal/grpclog"
+	"google.golang.org/grpc-forked/resolver"
 
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	xdsinternal "google.golang.org/grpc-forked/xds/internal"
+	xdsclient "google.golang.org/grpc-forked/xds/internal/client"
+	"google.golang.org/grpc-forked/xds/internal/client/bootstrap"
 )
 
 // xDS balancer name is xds_experimental while resolver scheme is

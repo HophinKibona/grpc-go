@@ -1,3 +1,4 @@
+//go:build go1.10
 // +build go1.10
 
 /*
@@ -26,8 +27,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/metadata"
+	rlspb "google.golang.org/grpc-forked/balancer/rls/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpc-forked/metadata"
 )
 
 var (

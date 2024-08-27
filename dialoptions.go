@@ -24,17 +24,17 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc/backoff"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	internalbackoff "google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/stats"
+	"google.golang.org/grpc-forked/backoff"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/credentials"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/internal"
+	internalbackoff "google.golang.org/grpc-forked/internal/backoff"
+	"google.golang.org/grpc-forked/internal/envconfig"
+	"google.golang.org/grpc-forked/internal/transport"
+	"google.golang.org/grpc-forked/keepalive"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/stats"
 )
 
 // dialOptions configure a Dial call. dialOptions are set by the DialOption
@@ -504,9 +504,9 @@ func WithDisableServiceConfig() DialOption {
 // WithDefaultServiceConfig returns a DialOption that configures the default
 // service config, which will be used in cases where:
 //
-// 1. WithDisableServiceConfig is also used.
-// 2. Resolver does not return a service config or if the resolver returns an
-//    invalid service config.
+//  1. WithDisableServiceConfig is also used.
+//  2. Resolver does not return a service config or if the resolver returns an
+//     invalid service config.
 //
 // This API is EXPERIMENTAL.
 func WithDefaultServiceConfig(s string) DialOption {

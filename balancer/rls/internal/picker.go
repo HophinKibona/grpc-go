@@ -1,3 +1,4 @@
+//go:build go1.10
 // +build go1.10
 
 /*
@@ -24,11 +25,11 @@ import (
 	"errors"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/rls/internal/cache"
-	"google.golang.org/grpc/balancer/rls/internal/keys"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/balancer/rls/internal/cache"
+	"google.golang.org/grpc-forked/balancer/rls/internal/keys"
+	rlspb "google.golang.org/grpc-forked/balancer/rls/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpc-forked/metadata"
 )
 
 var errRLSThrottled = balancer.TransientFailureError(errors.New("RLS call throttled at client side"))

@@ -18,7 +18,7 @@
 
 package conn
 
-import core "google.golang.org/grpc/credentials/alts/internal"
+import core "google.golang.org/grpc-forked/credentials/alts/internal"
 
 // NewOutCounter returns an outgoing counter initialized to the starting sequence
 // number for the client/server side of a connection.

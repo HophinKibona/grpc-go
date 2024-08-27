@@ -32,15 +32,15 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/encoding"
-	"google.golang.org/grpc/encoding/proto"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/credentials"
+	"google.golang.org/grpc-forked/encoding"
+	"google.golang.org/grpc-forked/encoding/proto"
+	"google.golang.org/grpc-forked/internal/transport"
+	"google.golang.org/grpc-forked/metadata"
+	"google.golang.org/grpc-forked/peer"
+	"google.golang.org/grpc-forked/stats"
+	"google.golang.org/grpc-forked/status"
 )
 
 // Compressor defines the interface gRPC uses to compress a message.
@@ -499,10 +499,11 @@ type parser struct {
 // format. The caller owns the returned msg memory.
 //
 // If there is an error, possible values are:
-//   * io.EOF, when no messages remain
-//   * io.ErrUnexpectedEOF
-//   * of type transport.ConnectionError
-//   * an error from the status package
+//   - io.EOF, when no messages remain
+//   - io.ErrUnexpectedEOF
+//   - of type transport.ConnectionError
+//   - an error from the status package
+//
 // No other error values or types must be returned, which also means
 // that the underlying io.Reader must not return an incompatible
 // error.

@@ -21,7 +21,7 @@ package conn
 import (
 	"testing"
 
-	core "google.golang.org/grpc/credentials/alts/internal"
+	core "google.golang.org/grpc-forked/credentials/alts/internal"
 )
 
 // getGCMCryptoPair outputs a client/server pair on aes128gcmRekey.

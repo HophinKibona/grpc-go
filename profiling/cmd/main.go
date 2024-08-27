@@ -23,8 +23,8 @@ package main
 import (
 	"os"
 
-	"google.golang.org/grpc/grpclog"
-	ppb "google.golang.org/grpc/profiling/proto"
+	"google.golang.org/grpc-forked/grpclog"
+	ppb "google.golang.org/grpc-forked/profiling/proto"
 )
 
 type snapshot struct {

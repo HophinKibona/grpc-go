@@ -35,17 +35,17 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/tap"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/credentials"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/internal/channelz"
+	"google.golang.org/grpc-forked/internal/grpcrand"
+	"google.golang.org/grpc-forked/keepalive"
+	"google.golang.org/grpc-forked/metadata"
+	"google.golang.org/grpc-forked/peer"
+	"google.golang.org/grpc-forked/stats"
+	"google.golang.org/grpc-forked/status"
+	"google.golang.org/grpc-forked/tap"
 )
 
 var (

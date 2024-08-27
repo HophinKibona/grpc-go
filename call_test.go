@@ -30,9 +30,9 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/internal/transport"
+	"google.golang.org/grpc-forked/status"
 )
 
 var (

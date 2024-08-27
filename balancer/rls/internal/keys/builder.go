@@ -1,3 +1,4 @@
+//go:build go1.10
 // +build go1.10
 
 /*
@@ -27,8 +28,8 @@ import (
 	"sort"
 	"strings"
 
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/metadata"
+	rlspb "google.golang.org/grpc-forked/balancer/rls/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpc-forked/metadata"
 )
 
 // BuilderMap provides a mapping from a request path to the key builder to be

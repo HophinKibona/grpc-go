@@ -27,7 +27,7 @@ import (
 	endpointpb "github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint"
 	typepb "github.com/envoyproxy/go-control-plane/envoy/type"
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc/xds/internal"
+	"google.golang.org/grpc-forked/xds/internal"
 )
 
 // OverloadDropConfig contains the config to drop overloads.
@@ -154,7 +154,8 @@ func ParseEDSRespProto(m *xdspb.ClusterLoadAssignment) (*EDSUpdate, error) {
 // This is used by EDS balancer tests.
 //
 // TODO: delete this. The EDS balancer tests should build an EDSUpdate directly,
-//  instead of building and parsing a proto message.
+//
+//	instead of building and parsing a proto message.
 func ParseEDSRespProtoForTesting(m *xdspb.ClusterLoadAssignment) *EDSUpdate {
 	u, err := ParseEDSRespProto(m)
 	if err != nil {

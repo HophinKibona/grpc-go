@@ -27,9 +27,9 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/features/proto/echo"
-	profsvc "google.golang.org/grpc/profiling/service"
+	"google.golang.org/grpc-forked"
+	pb "google.golang.org/grpc-forked/examples/features/proto/echo"
+	profsvc "google.golang.org/grpc-forked/profiling/service"
 )
 
 var addr = flag.String("addr", "localhost:50051", "the address to connect to")

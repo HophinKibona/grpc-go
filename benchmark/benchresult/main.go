@@ -18,12 +18,14 @@
 
 /*
 To format the benchmark result:
-  go run benchmark/benchresult/main.go resultfile
+
+	go run benchmark/benchresult/main.go resultfile
 
 To see the performance change based on a old result:
-  go run benchmark/benchresult/main.go resultfile_old resultfile
-It will print the comparison result of intersection benchmarks between two files.
 
+	go run benchmark/benchresult/main.go resultfile_old resultfile
+
+It will print the comparison result of intersection benchmarks between two files.
 */
 package main
 
@@ -35,7 +37,7 @@ import (
 	"strings"
 	"time"
 
-	"google.golang.org/grpc/benchmark/stats"
+	"google.golang.org/grpc-forked/benchmark/stats"
 )
 
 func createMap(fileName string) map[string]stats.BenchResults {

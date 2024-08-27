@@ -23,10 +23,10 @@ import (
 	"errors"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/resolver"
 )
 
 type baseBuilder struct {
@@ -167,8 +167,8 @@ func (b *baseBalancer) mergeErrors() error {
 
 // regeneratePicker takes a snapshot of the balancer, and generates a picker
 // from it. The picker is
-//  - errPicker if the balancer is in TransientFailure,
-//  - built by the pickerBuilder with all READY SubConns otherwise.
+//   - errPicker if the balancer is in TransientFailure,
+//   - built by the pickerBuilder with all READY SubConns otherwise.
 func (b *baseBalancer) regeneratePicker() {
 	if b.state == connectivity.TransientFailure {
 		if b.pickerBuilder != nil {

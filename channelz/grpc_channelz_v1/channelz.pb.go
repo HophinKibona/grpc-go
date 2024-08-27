@@ -11,9 +11,9 @@ import (
 	duration "github.com/golang/protobuf/ptypes/duration"
 	timestamp "github.com/golang/protobuf/ptypes/timestamp"
 	wrappers "github.com/golang/protobuf/ptypes/wrappers"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "google.golang.org/grpc-forked"
+	codes "google.golang.org/grpc-forked/codes"
+	status "google.golang.org/grpc-forked/status"
 	math "math"
 )
 
@@ -2936,7 +2936,7 @@ const _ = grpc.SupportPackageIsVersion6
 
 // ChannelzClient is the client API for Channelz service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc-forked#ClientConn.NewStream.
 type ChannelzClient interface {
 	// Gets all root channels (i.e. channels the application has directly
 	// created). This does not include subchannels nor non-top level channels.

@@ -1,3 +1,4 @@
+//go:build go1.10
 // +build go1.10
 
 /*
@@ -29,10 +30,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/grpc/balancer"
-	_ "google.golang.org/grpc/balancer/grpclb" // grpclb for config parsing.
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	_ "google.golang.org/grpc/internal/resolver/passthrough" // passthrough resolver.
+	"google.golang.org/grpc-forked/balancer"
+	_ "google.golang.org/grpc-forked/balancer/grpclb" // grpclb for config parsing.
+	rlspb "google.golang.org/grpc-forked/balancer/rls/internal/proto/grpc_lookup_v1"
+	_ "google.golang.org/grpc-forked/internal/resolver/passthrough" // passthrough resolver.
 )
 
 const balancerWithoutConfigParserName = "dummy_balancer"

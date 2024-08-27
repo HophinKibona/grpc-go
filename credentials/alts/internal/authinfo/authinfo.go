@@ -20,8 +20,8 @@
 package authinfo
 
 import (
-	"google.golang.org/grpc/credentials"
-	altspb "google.golang.org/grpc/credentials/alts/internal/proto/grpc_gcp"
+	"google.golang.org/grpc-forked/credentials"
+	altspb "google.golang.org/grpc-forked/credentials/alts/internal/proto/grpc_gcp"
 )
 
 var _ credentials.AuthInfo = (*altsAuthInfo)(nil)

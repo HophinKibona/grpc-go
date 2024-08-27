@@ -24,9 +24,9 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpc-forked"
+	"google.golang.org/grpc-forked/internal/buffer"
+	"google.golang.org/grpc-forked/internal/grpclog"
 
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
@@ -304,10 +304,10 @@ func (v2c *v2Client) processAckInfo(t *ackInfo, stream adsStream) (target []stri
 // new requests to send on the stream.
 //
 // For each new request (watchInfo), it's
-//  - processed and added to the watch map
-//    - so resend will pick them up when there are new streams)
-//  - sent on the current stream if there's one
-//    - the current stream is cleared when any send on it fails
+//   - processed and added to the watch map
+//   - so resend will pick them up when there are new streams)
+//   - sent on the current stream if there's one
+//   - the current stream is cleared when any send on it fails
 //
 // For each new stream, all the existing requests will be resent.
 //

@@ -27,12 +27,12 @@ import (
 	"net"
 	"strings"
 
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/credentials"
+	"google.golang.org/grpc-forked/internal"
+	"google.golang.org/grpc-forked/metadata"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/serviceconfig"
 )
 
 var (
@@ -426,9 +426,9 @@ type ConnectivityStateEvaluator struct {
 // RecordTransition records state change happening in subConn and based on that
 // it evaluates what aggregated state should be.
 //
-//  - If at least one SubConn in Ready, the aggregated state is Ready;
-//  - Else if at least one SubConn in Connecting, the aggregated state is Connecting;
-//  - Else the aggregated state is TransientFailure.
+//   - If at least one SubConn in Ready, the aggregated state is Ready;
+//   - Else if at least one SubConn in Connecting, the aggregated state is Connecting;
+//   - Else the aggregated state is TransientFailure.
 //
 // Idle and Shutdown are not considered.
 func (cse *ConnectivityStateEvaluator) RecordTransition(oldState, newState connectivity.State) connectivity.State {

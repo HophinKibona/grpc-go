@@ -23,8 +23,8 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	altspb "google.golang.org/grpc/credentials/alts/internal/proto/grpc_gcp"
-	"google.golang.org/grpc/internal/grpctest"
+	altspb "google.golang.org/grpc-forked/credentials/alts/internal/proto/grpc_gcp"
+	"google.golang.org/grpc-forked/internal/grpctest"
 )
 
 type s struct {

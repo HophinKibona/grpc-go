@@ -29,8 +29,8 @@ import (
 	routepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/route"
 	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
+	"google.golang.org/grpc-forked/xds/internal/testutils"
+	"google.golang.org/grpc-forked/xds/internal/testutils/fakeserver"
 )
 
 func (v2c *v2Client) cloneRDSCacheForTesting() map[string]string {

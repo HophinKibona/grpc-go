@@ -23,11 +23,11 @@ import (
 	"net"
 	"sync"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/naming"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/credentials"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/naming"
+	"google.golang.org/grpc-forked/status"
 )
 
 // Address represents a server the client connects to.

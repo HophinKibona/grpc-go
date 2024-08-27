@@ -1,5 +1,5 @@
-module google.golang.org/grpc/security/advancedtls
+module google.golang.org/grpc-forked/security/advancedtls
 
 go 1.13
 
-require google.golang.org/grpc v1.27.0
+require google.golang.org/grpc-forked v1.27.0

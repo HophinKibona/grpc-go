@@ -6,13 +6,13 @@ connection will be close. Note that pings are only necessary when there's no
 activity on the connection.
 
 For how to configure keepalive, see
-https://godoc.org/google.golang.org/grpc/keepalive for the options.
+https://godoc.org/google.golang.org/grpc-forked/keepalive for the options.
 
 ## What should I set?
 
 It should be sufficient for most users to set [client
-parameters](https://godoc.org/google.golang.org/grpc/keepalive) as a [dial
-option](https://godoc.org/google.golang.org/grpc#WithKeepaliveParams).
+parameters](https://godoc.org/google.golang.org/grpc-forked/keepalive) as a [dial
+option](https://godoc.org/google.golang.org/grpc-forked#WithKeepaliveParams).
 
 ## What will happen?
 
@@ -29,13 +29,13 @@ connection during this period (a ping ack is an activity).
 
 Server has similar `Time` and `Timeout` settings as client. Server can also
 configure connection max-age. See [server
-parameters](https://godoc.org/google.golang.org/grpc/keepalive#ServerParameters)
+parameters](https://godoc.org/google.golang.org/grpc-forked/keepalive#ServerParameters)
 for details.
 
 ### Enforcement policy
 
 [Enforcement
-policy](https://godoc.org/google.golang.org/grpc/keepalive#EnforcementPolicy) is
+policy](https://godoc.org/google.golang.org/grpc-forked/keepalive#EnforcementPolicy) is
 a special setting on server side to protect server from malicious or misbehaving
 clients.
 

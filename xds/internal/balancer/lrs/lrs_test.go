@@ -35,10 +35,10 @@ import (
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	structpb "github.com/golang/protobuf/ptypes/struct"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal"
+	"google.golang.org/grpc-forked"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/status"
+	"google.golang.org/grpc-forked/xds/internal"
 )
 
 const (

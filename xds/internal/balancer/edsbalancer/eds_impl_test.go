@@ -24,14 +24,14 @@ import (
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/balancer/balancergroup"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/balancer/roundrobin"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/xds/internal"
+	"google.golang.org/grpc-forked/xds/internal/balancer/balancergroup"
+	xdsclient "google.golang.org/grpc-forked/xds/internal/client"
+	"google.golang.org/grpc-forked/xds/internal/testutils"
 )
 
 var (
@@ -51,10 +51,10 @@ func init() {
 }
 
 // One locality
-//  - add backend
-//  - remove backend
-//  - replace backend
-//  - change drop rate
+//   - add backend
+//   - remove backend
+//   - replace backend
+//   - change drop rate
 func (s) TestEDS_OneLocality(t *testing.T) {
 	cc := testutils.NewTestClientConn(t)
 	edsb := newEDSBalancerImpl(cc, nil, nil, nil)
@@ -171,11 +171,11 @@ func (s) TestEDS_OneLocality(t *testing.T) {
 }
 
 // 2 locality
-//  - start with 2 locality
-//  - add locality
-//  - remove locality
-//  - address change for the <not-the-first> locality
-//  - update locality weight
+//   - start with 2 locality
+//   - add locality
+//   - remove locality
+//   - address change for the <not-the-first> locality
+//   - update locality weight
 func (s) TestEDS_TwoLocalities(t *testing.T) {
 	cc := testutils.NewTestClientConn(t)
 	edsb := newEDSBalancerImpl(cc, nil, nil, nil)

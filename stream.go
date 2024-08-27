@@ -28,18 +28,18 @@ import (
 	"time"
 
 	"golang.org/x/net/trace"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/encoding"
-	"google.golang.org/grpc/internal/balancerload"
-	"google.golang.org/grpc/internal/binarylog"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/encoding"
+	"google.golang.org/grpc-forked/internal/balancerload"
+	"google.golang.org/grpc-forked/internal/binarylog"
+	"google.golang.org/grpc-forked/internal/channelz"
+	"google.golang.org/grpc-forked/internal/grpcrand"
+	"google.golang.org/grpc-forked/internal/transport"
+	"google.golang.org/grpc-forked/metadata"
+	"google.golang.org/grpc-forked/peer"
+	"google.golang.org/grpc-forked/stats"
+	"google.golang.org/grpc-forked/status"
 )
 
 // StreamHandler defines the handler called by gRPC server to complete the
@@ -128,13 +128,13 @@ type ClientStream interface {
 // To ensure resources are not leaked due to the stream returned, one of the following
 // actions must be performed:
 //
-//      1. Call Close on the ClientConn.
-//      2. Cancel the context provided.
-//      3. Call RecvMsg until a non-nil error is returned. A protobuf-generated
-//         client-streaming RPC, for instance, might use the helper function
-//         CloseAndRecv (note that CloseSend does not Recv, therefore is not
-//         guaranteed to release all resources).
-//      4. Receive a non-nil, non-io.EOF error from Header or SendMsg.
+//  1. Call Close on the ClientConn.
+//  2. Cancel the context provided.
+//  3. Call RecvMsg until a non-nil error is returned. A protobuf-generated
+//     client-streaming RPC, for instance, might use the helper function
+//     CloseAndRecv (note that CloseSend does not Recv, therefore is not
+//     guaranteed to release all resources).
+//  4. Receive a non-nil, non-io.EOF error from Header or SendMsg.
 //
 // If none of the above happen, a goroutine and a context will be leaked, and grpc
 // will not call the optionally-configured stats handler with a stats.End message.

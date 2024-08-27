@@ -1,3 +1,4 @@
+//go:build !appengine
 // +build !appengine
 
 /*
@@ -29,7 +30,7 @@ import (
 	"time"
 
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc-forked/grpclog"
 )
 
 // GetCPUTime returns the how much CPU time has passed since the start of this process.

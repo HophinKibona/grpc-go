@@ -30,24 +30,24 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/grpcutil"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/balancer/base"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/credentials"
+	"google.golang.org/grpc-forked/internal/backoff"
+	"google.golang.org/grpc-forked/internal/channelz"
+	"google.golang.org/grpc-forked/internal/grpcsync"
+	"google.golang.org/grpc-forked/internal/grpcutil"
+	"google.golang.org/grpc-forked/internal/transport"
+	"google.golang.org/grpc-forked/keepalive"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/serviceconfig"
+	"google.golang.org/grpc-forked/status"
 
-	_ "google.golang.org/grpc/balancer/roundrobin"           // To register roundrobin.
-	_ "google.golang.org/grpc/internal/resolver/dns"         // To register dns resolver.
-	_ "google.golang.org/grpc/internal/resolver/passthrough" // To register passthrough resolver.
+	_ "google.golang.org/grpc-forked/balancer/roundrobin"           // To register roundrobin.
+	_ "google.golang.org/grpc-forked/internal/resolver/dns"         // To register dns resolver.
+	_ "google.golang.org/grpc-forked/internal/resolver/passthrough" // To register passthrough resolver.
 )
 
 const (
@@ -812,9 +812,9 @@ func (ac *addrConn) connect() error {
 //
 // If ac is Ready, it checks whether current connected address of ac is in the
 // new addrs list.
-//  - If true, it updates ac.addrs and returns true. The ac will keep using
-//    the existing connection.
-//  - If false, it does nothing and returns false.
+//   - If true, it updates ac.addrs and returns true. The ac will keep using
+//     the existing connection.
+//   - If false, it does nothing and returns false.
 func (ac *addrConn) tryUpdateAddrs(addrs []resolver.Address) bool {
 	ac.mu.Lock()
 	defer ac.mu.Unlock()

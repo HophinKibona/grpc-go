@@ -22,7 +22,7 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 
-	core "google.golang.org/grpc/credentials/alts/internal"
+	core "google.golang.org/grpc-forked/credentials/alts/internal"
 )
 
 const (

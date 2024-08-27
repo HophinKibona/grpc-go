@@ -23,6 +23,6 @@
 package experimental
 
 import (
-	_ "google.golang.org/grpc/xds/internal/balancer" // Register the balancers.
-	_ "google.golang.org/grpc/xds/internal/resolver" // Register the xds_resolver
+	_ "google.golang.org/grpc-forked/xds/internal/balancer" // Register the balancers.
+	_ "google.golang.org/grpc-forked/xds/internal/resolver" // Register the xds_resolver
 )

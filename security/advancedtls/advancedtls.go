@@ -30,7 +30,7 @@ import (
 	"syscall"
 	"time"
 
-	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc-forked/credentials"
 )
 
 // VerificationFuncParams contains the parameters available to users when implementing CustomVerificationFunc.
@@ -79,9 +79,12 @@ type RootCertificateOptions struct {
 // Certificates or GetClientCertificate indicates the certificates sent from the client to the
 // server to prove client's identities. The rules for setting these two fields are:
 // If requiring mutual authentication on server side:
-//     Either Certificates or GetClientCertificate must be set; the other will be ignored
+//
+//	Either Certificates or GetClientCertificate must be set; the other will be ignored
+//
 // Otherwise:
-//     Nothing needed(the two fields will be ignored)
+//
+//	Nothing needed(the two fields will be ignored)
 type ClientOptions struct {
 	// If field Certificates is set, field GetClientCertificate will be ignored. The client will use
 	// Certificates every time when asked for a certificate, without performing certificate reloading.
@@ -366,7 +369,8 @@ func NewServerCreds(o *ServerOptions) (credentials.TransportCredentials, error) 
 }
 
 // TODO(ZhenLian): The code below are duplicates with gRPC-Go under
-//                 credentials/internal. Consider refactoring in the future.
+//
+//	credentials/internal. Consider refactoring in the future.
 const alpnProtoStrH2 = "h2"
 
 func appendH2ToNextProtos(ps []string) []string {

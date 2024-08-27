@@ -30,10 +30,10 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpc-forked/internal/envconfig"
+	"google.golang.org/grpc-forked/internal/leakcheck"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/serviceconfig"
 )
 
 func TestMain(m *testing.M) {

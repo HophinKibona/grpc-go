@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/internal/buffer"
+	"google.golang.org/grpc-forked/internal/channelz"
+	"google.golang.org/grpc-forked/internal/grpcsync"
+	"google.golang.org/grpc-forked/resolver"
 )
 
 // scStateUpdate contains the subConn and the new state it changed to.

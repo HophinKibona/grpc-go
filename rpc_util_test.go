@@ -27,13 +27,13 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/encoding"
-	protoenc "google.golang.org/grpc/encoding/proto"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/status"
-	perfpb "google.golang.org/grpc/test/codec_perf"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/encoding"
+	protoenc "google.golang.org/grpc-forked/encoding/proto"
+	"google.golang.org/grpc-forked/internal/testutils"
+	"google.golang.org/grpc-forked/internal/transport"
+	"google.golang.org/grpc-forked/status"
+	perfpb "google.golang.org/grpc-forked/test/codec_perf"
 )
 
 type fullReader struct {

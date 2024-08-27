@@ -1,4 +1,4 @@
-module google.golang.org/grpc/test/tools
+module google.golang.org/grpc-forked/test/tools
 
 go 1.11
 

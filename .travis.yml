@@ -19,7 +19,7 @@ matrix:
   - go: 1.9.x
     env: GAE=1
 
-go_import_path: google.golang.org/grpc
+go_import_path: google.golang.org/grpc-forked
 
 before_install:
   - if [[ "${GO111MODULE}" = "on" ]]; then mkdir "${HOME}/go"; export GOPATH="${HOME}/go"; fi

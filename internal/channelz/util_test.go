@@ -1,3 +1,4 @@
+//go:build linux && go1.10 && !appengine
 // +build linux,go1.10,!appengine
 
 /*
@@ -31,8 +32,8 @@ import (
 	"testing"
 
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc-forked/internal/channelz"
+	"google.golang.org/grpc-forked/internal/grpctest"
 )
 
 type s struct {

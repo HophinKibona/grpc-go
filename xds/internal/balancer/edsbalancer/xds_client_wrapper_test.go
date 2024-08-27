@@ -26,16 +26,16 @@ import (
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/resolver"
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
+	"google.golang.org/grpc-forked"
+	"google.golang.org/grpc-forked/attributes"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/resolver"
+	xdsinternal "google.golang.org/grpc-forked/xds/internal"
+	xdsclient "google.golang.org/grpc-forked/xds/internal/client"
+	"google.golang.org/grpc-forked/xds/internal/client/bootstrap"
+	"google.golang.org/grpc-forked/xds/internal/testutils"
+	"google.golang.org/grpc-forked/xds/internal/testutils/fakeclient"
+	"google.golang.org/grpc-forked/xds/internal/testutils/fakeserver"
 )
 
 const (
@@ -52,10 +52,10 @@ var (
 // edsBalancer.
 //
 // The test does the following:
-// * Starts a fake xDS server.
-// * Creates a clientWrapper.
-// * Sends updates with different edsServiceNames and expects new watches to be
-//   registered.
+//   - Starts a fake xDS server.
+//   - Creates a clientWrapper.
+//   - Sends updates with different edsServiceNames and expects new watches to be
+//     registered.
 func (s) TestClientWrapperWatchEDS(t *testing.T) {
 	fakeServer, cleanup, err := fakeserver.StartServer()
 	if err != nil {
@@ -134,12 +134,12 @@ func (s) TestClientWrapperWatchEDS(t *testing.T) {
 // errors from the edsWatch callback appropriately.
 //
 // The test does the following:
-// * Creates a clientWrapper.
-// * Creates a fakeclient.Client and passes it to the clientWrapper in attributes.
-// * Verifies the clientWrapper registers an EDS watch.
-// * Forces the fakeclient.Client to invoke the registered EDS watch callback with
-//   an error. Verifies that the wrapper does not invoke the top-level
-//   edsBalancer with the received error.
+//   - Creates a clientWrapper.
+//   - Creates a fakeclient.Client and passes it to the clientWrapper in attributes.
+//   - Verifies the clientWrapper registers an EDS watch.
+//   - Forces the fakeclient.Client to invoke the registered EDS watch callback with
+//     an error. Verifies that the wrapper does not invoke the top-level
+//     edsBalancer with the received error.
 func (s) TestClientWrapperHandleUpdateError(t *testing.T) {
 	edsRespChan := testutils.NewChannel()
 	newEDS := func(update *xdsclient.EDSUpdate) error {

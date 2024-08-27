@@ -26,9 +26,9 @@ import (
 	"net"
 	"sync"
 
-	"google.golang.org/grpc"
+	"google.golang.org/grpc-forked"
 
-	pb "google.golang.org/grpc/examples/features/proto/echo"
+	pb "google.golang.org/grpc-forked/examples/features/proto/echo"
 )
 
 var (

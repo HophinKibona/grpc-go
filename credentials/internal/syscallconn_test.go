@@ -1,3 +1,4 @@
+//go:build !appengine
 // +build !appengine
 
 /*
@@ -25,8 +26,8 @@ import (
 	"syscall"
 	"testing"
 
-	"google.golang.org/grpc/credentials/internal"
-	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc-forked/credentials/internal"
+	"google.golang.org/grpc-forked/internal/grpctest"
 )
 
 type s struct {

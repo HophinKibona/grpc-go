@@ -1,3 +1,4 @@
+//go:build !linux || appengine
 // +build !linux appengine
 
 /*
@@ -25,7 +26,7 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc-forked/grpclog"
 )
 
 var once sync.Once

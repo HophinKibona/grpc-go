@@ -23,17 +23,17 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/edsbalancer"
+	"google.golang.org/grpc-forked/attributes"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/internal/buffer"
+	"google.golang.org/grpc-forked/internal/grpclog"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/serviceconfig"
+	"google.golang.org/grpc-forked/xds/internal/balancer/edsbalancer"
 
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	xdsinternal "google.golang.org/grpc-forked/xds/internal"
+	xdsclient "google.golang.org/grpc-forked/xds/internal/client"
 )
 
 const (
@@ -166,15 +166,15 @@ type cdsBalancer struct {
 // methods which are invoked directly by gRPC or xdsClient simply push an
 // update onto a channel which is read and acted upon right here.
 //
-// 1. Good clientConn updates lead to registration of a CDS watch. Updates with
-//    error lead to cancellation of existing watch and propagation of the same
-//    error to the edsBalancer.
-// 2. SubConn updates are passthrough and are simply handed over to the
-//    underlying edsBalancer.
-// 3. Watch API updates lead to clientConn updates being invoked on the
-//    underlying edsBalancer.
-// 4. Close results in cancellation of the CDS watch and closing of the
-//    underlying edsBalancer and is the only way to exit this goroutine.
+//  1. Good clientConn updates lead to registration of a CDS watch. Updates with
+//     error lead to cancellation of existing watch and propagation of the same
+//     error to the edsBalancer.
+//  2. SubConn updates are passthrough and are simply handed over to the
+//     underlying edsBalancer.
+//  3. Watch API updates lead to clientConn updates being invoked on the
+//     underlying edsBalancer.
+//  4. Close results in cancellation of the CDS watch and closing of the
+//     underlying edsBalancer and is the only way to exit this goroutine.
 func (b *cdsBalancer) run() {
 	for {
 		u := <-b.updateCh.Get()

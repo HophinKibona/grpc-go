@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/naming"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/naming"
+	"google.golang.org/grpc-forked/status"
 )
 
 func pickFirstBalancerV1(r naming.Resolver) Balancer {

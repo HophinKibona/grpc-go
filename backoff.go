@@ -24,7 +24,7 @@ package grpc
 import (
 	"time"
 
-	"google.golang.org/grpc/backoff"
+	"google.golang.org/grpc-forked/backoff"
 )
 
 // DefaultBackoffConfig uses values specified for backoff in

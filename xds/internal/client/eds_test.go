@@ -28,8 +28,8 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	anypb "github.com/golang/protobuf/ptypes/any"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"google.golang.org/grpc-forked/xds/internal"
+	"google.golang.org/grpc-forked/xds/internal/testutils"
 )
 
 func (s) TestEDSParseRespProto(t *testing.T) {

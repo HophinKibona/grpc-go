@@ -1,4 +1,6 @@
-// +build linux,!appengine
+//go:build linux && !appengine && (386 || amd64)
+// +build linux
+// +build !appengine
 // +build 386 amd64
 
 /*
@@ -34,8 +36,8 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	durpb "github.com/golang/protobuf/ptypes/duration"
 	"golang.org/x/sys/unix"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/internal/channelz"
+	channelzpb "google.golang.org/grpc-forked/channelz/grpc_channelz_v1"
+	"google.golang.org/grpc-forked/internal/channelz"
 )
 
 func init() {

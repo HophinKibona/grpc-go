@@ -25,7 +25,7 @@ import (
 	"context"
 	"net"
 
-	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc-forked/credentials"
 )
 
 const (

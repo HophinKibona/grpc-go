@@ -28,19 +28,19 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpctest"
-	scpb "google.golang.org/grpc/internal/proto/grpc_service_config"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/lrs"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
+	"google.golang.org/grpc-forked"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/internal/grpclog"
+	"google.golang.org/grpc-forked/internal/grpctest"
+	scpb "google.golang.org/grpc-forked/internal/proto/grpc_service_config"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/serviceconfig"
+	"google.golang.org/grpc-forked/xds/internal/balancer/lrs"
+	xdsclient "google.golang.org/grpc-forked/xds/internal/client"
+	"google.golang.org/grpc-forked/xds/internal/client/bootstrap"
+	"google.golang.org/grpc-forked/xds/internal/testutils"
+	"google.golang.org/grpc-forked/xds/internal/testutils/fakeclient"
 )
 
 func init() {
@@ -215,10 +215,10 @@ func setup(edsLBCh *testutils.Channel, xdsClientCh *testutils.Channel) func() {
 // balancer name in the lbConfig is updated.
 //
 // The test does the following:
-// * Builds a new xds balancer.
-// * Repeatedly pushes new ClientConnState which specifies different
-//   balancerName in the lbConfig. We expect xdsClient objects to created
-//   whenever the balancerName changes.
+//   - Builds a new xds balancer.
+//   - Repeatedly pushes new ClientConnState which specifies different
+//     balancerName in the lbConfig. We expect xdsClient objects to created
+//     whenever the balancerName changes.
 func (s) TestXDSConfigBalancerNameUpdate(t *testing.T) {
 	oldBootstrapConfigNew := bootstrapConfigNew
 	bootstrapConfigNew = func() (*bootstrap.Config, error) {
@@ -302,14 +302,14 @@ func (b *fakeBalancer) Close() {}
 // section of the lbConfig is updated.
 //
 // The test does the following:
-// * Builds a new xds balancer.
-// * Pushes a new ClientConnState with a childPolicy set to fakeBalancerA.
-//   Verifies that a new xdsClient is created. It then pushes a new edsUpdate
-//   through the fakexds client. Verifies that a new edsLB is created and it
-//   receives the expected childPolicy.
-// * Pushes a new ClientConnState with a childPolicy set to fakeBalancerB.
-//   This time around, we expect no new xdsClient or edsLB to be created.
-//   Instead, we expect the existing edsLB to receive the new child policy.
+//   - Builds a new xds balancer.
+//   - Pushes a new ClientConnState with a childPolicy set to fakeBalancerA.
+//     Verifies that a new xdsClient is created. It then pushes a new edsUpdate
+//     through the fakexds client. Verifies that a new edsLB is created and it
+//     receives the expected childPolicy.
+//   - Pushes a new ClientConnState with a childPolicy set to fakeBalancerB.
+//     This time around, we expect no new xdsClient or edsLB to be created.
+//     Instead, we expect the existing edsLB to receive the new child policy.
 func (s) TestXDSConnfigChildPolicyUpdate(t *testing.T) {
 	edsLBCh := testutils.NewChannel()
 	xdsClientCh := testutils.NewChannel()

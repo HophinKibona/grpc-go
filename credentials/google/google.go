@@ -24,11 +24,11 @@ import (
 	"fmt"
 	"time"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/credentials/oauth"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
+	"google.golang.org/grpc-forked/credentials"
+	"google.golang.org/grpc-forked/credentials/alts"
+	"google.golang.org/grpc-forked/credentials/oauth"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/internal"
 )
 
 const tokenRequestTimeout = 30 * time.Second

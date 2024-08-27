@@ -1,7 +1,7 @@
 # gRPC-Go
 
 [![Build Status](https://travis-ci.org/grpc/grpc-go.svg)](https://travis-ci.org/grpc/grpc-go)
-[![GoDoc](https://godoc.org/google.golang.org/grpc?status.svg)](https://godoc.org/google.golang.org/grpc)
+[![GoDoc](https://godoc.org/google.golang.org/grpc-forked?status.svg)](https://godoc.org/google.golang.org/grpc-forked)
 [![GoReportCard](https://goreportcard.com/badge/grpc/grpc-go)](https://goreportcard.com/report/github.com/grpc/grpc-go)
 
 The Go implementation of [gRPC](https://grpc.io/): A high performance, open
@@ -16,10 +16,10 @@ To install this package, you need to install Go and setup your Go workspace on
 your computer. The simplest way to install the library is to run:
 
 ```
-$ go get -u google.golang.org/grpc
+$ go get -u google.golang.org/grpc-forked
 ```
 
-With Go module support (Go 1.11+), simply `import "google.golang.org/grpc"` in
+With Go module support (Go 1.11+), simply `import "google.golang.org/grpc-forked"` in
 your source code and `go [build|run|test]` will automatically download the
 necessary dependencies ([Go modules
 ref](https://github.com/golang/go/wiki/Modules)).
@@ -33,7 +33,7 @@ gRPC-Go requires Go 1.9 or later.
 
 Documentation
 -------------
-- See [godoc](https://godoc.org/google.golang.org/grpc) for package and API
+- See [godoc](https://godoc.org/google.golang.org/grpc-forked) for package and API
   descriptions.
 - Documentation on specific topics can be found in the [Documentation
   directory](Documentation/).
@@ -59,8 +59,8 @@ The `golang.org` domain may be blocked from some countries.  `go get` usually
 produces an error like the following when this happens:
 
 ```
-$ go get -u google.golang.org/grpc
-package google.golang.org/grpc: unrecognized import path "google.golang.org/grpc" (https fetch: Get https://google.golang.org/grpc?go-get=1: dial tcp 216.239.37.1:443: i/o timeout)
+$ go get -u google.golang.org/grpc-forked
+package google.golang.org/grpc-forked: unrecognized import path "google.golang.org/grpc-forked" (https fetch: Get https://google.golang.org/grpc-forked?go-get=1: dial tcp 216.239.37.1:443: i/o timeout)
 ```
 
 To build Go code, there are several options:
@@ -70,7 +70,7 @@ To build Go code, there are several options:
 - Without Go module support: `git clone` the repo manually:
 
   ```
-  git clone https://github.com/grpc/grpc-go.git $GOPATH/src/google.golang.org/grpc
+  git clone https://github.com/grpc/grpc-go.git $GOPATH/src/google.golang.org/grpc-forked
   ```
 
   You will need to do the same for all of grpc's dependencies in `golang.org`,
@@ -80,7 +80,7 @@ To build Go code, there are several options:
   mod` to create aliases for golang.org packages.  In your project's directory:
 
   ```
-  go mod edit -replace=google.golang.org/grpc=github.com/grpc/grpc-go@latest
+  go mod edit -replace=google.golang.org/grpc-forked=github.com/grpc/grpc-go@latest
   go mod tidy
   go mod vendor
   go build -mod=vendor
@@ -103,7 +103,7 @@ the same module containing the generated `.pb.go` files.  For example,
 module <your module name>
 
 require (
-    google.golang.org/grpc v1.27.0
+    google.golang.org/grpc-forked v1.27.0
 )
 ```
 
@@ -111,7 +111,7 @@ require (
 
 Please update proto package, gRPC package and rebuild the proto files:
  - `go get -u github.com/golang/protobuf/{proto,protoc-gen-go}`
- - `go get -u google.golang.org/grpc`
+ - `go get -u google.golang.org/grpc-forked`
  - `protoc --go_out=plugins=grpc:. *.proto`
 
 #### How to turn on logging
@@ -132,7 +132,7 @@ possible reasons, including:
  1. server shutdown
  1. Keepalive parameters caused connection shutdown, for example if you have configured
     your server to terminate connections regularly to [trigger DNS lookups](https://github.com/grpc/grpc-go/issues/3170#issuecomment-552517779).
-    If this is the case, you may want to increase your [MaxConnectionAgeGrace](https://pkg.go.dev/google.golang.org/grpc/keepalive?tab=doc#ServerParameters),
+    If this is the case, you may want to increase your [MaxConnectionAgeGrace](https://pkg.go.dev/google.golang.org/grpc-forked/keepalive?tab=doc#ServerParameters),
     to allow longer RPC calls to finish.
 
 It can be tricky to debug this because the error happens on the client side but

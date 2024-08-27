@@ -32,9 +32,9 @@ implementation):
 
 ```go
 import (
-	"google.golang.org/grpc"
-	profsvc "google.golang.org/grpc/profiling/service"
-	pb "google.golang.org/grpc/examples/features/proto/echo"
+	"google.golang.org/grpc-forked"
+	profsvc "google.golang.org/grpc-forked/profiling/service"
+	pb "google.golang.org/grpc-forked/examples/features/proto/echo"
 )
 
 type server struct{}
@@ -95,7 +95,7 @@ profiling management. Assuming `example.com:50051` is the address of the server
 that you would like to enable profiling in, do the following:
 
 ```bash
-$ go run google.golang.org/grpc/profiling/cmd \
+$ go run google.golang.org/grpc-forked/profiling/cmd \
     -address example.com:50051                \
     -enable-profiling
 ```
@@ -111,7 +111,7 @@ profiling within your application in Go:
 
 ```go
 import (
-	"google.golang.org/grpc/profiling"
+	"google.golang.org/grpc-forked/profiling"
 )
 
 func setProfiling(enable bool) {
@@ -131,7 +131,7 @@ operations.
 To retrieve profiling data from a remote server, run the following command:
 
 ```bash
-$ go run google.golang.org/grpc/profiling/cmd \
+$ go run google.golang.org/grpc-forked/profiling/cmd \
     -address example.com:50051                \
     -retrieve-snapshot                        \
     -snapshot /path/to/snapshot
@@ -144,7 +144,7 @@ To process this data into a human-consumable such as
 [Catapult's trace-viewer format](https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview):
 
 ```bash
-$ go run google.golang.org/grpc/profiling/cmd \
+$ go run google.golang.org/grpc-forked/profiling/cmd \
     -snapshot /path/to/snapshot               \
     -stream-stats-catapult-json /path/to/json
 ```
@@ -176,7 +176,7 @@ register or enable/disable profiling for just one `grpc.Server` or operation.
 That is, you can enable/disable profiling globally for all gRPC operations or
 none at all.
 
-##### Is `google.golang.org/grpc/profiling/cmd` the canonical implementation of a client that can talk to the profiling service?
+##### Is `google.golang.org/grpc-forked/profiling/cmd` the canonical implementation of a client that can talk to the profiling service?
 
 No, the command-line tool is simply provided as a reference implementation and
 as a convenience. You are free to write your own tool as long as it can

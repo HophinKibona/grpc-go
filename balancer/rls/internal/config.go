@@ -1,3 +1,4 @@
+//go:build go1.10
 // +build go1.10
 
 /*
@@ -29,13 +30,13 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/ptypes"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/rls/internal/keys"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/grpcutil"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/balancer/rls/internal/keys"
+	rlspb "google.golang.org/grpc-forked/balancer/rls/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/internal/grpcutil"
+	"google.golang.org/grpc-forked/resolver"
+	"google.golang.org/grpc-forked/serviceconfig"
 )
 
 const (
@@ -113,40 +114,40 @@ func (l *loadBalancingConfig) UnmarshalJSON(data []byte) error {
 // Helps implement the balancer.ConfigParser interface.
 //
 // The following validation checks are performed:
-// * routeLookupConfig:
-//   ** grpc_keybuilders field:
-//      - must have at least one entry
-//      - must not have two entries with the same Name
-//      - must not have any entry with a Name with the service field unset or
-//        empty
-//      - must not have any entries without a Name
-//      - must not have a headers entry that has required_match set
-//      - must not have two headers entries with the same key within one entry
-//   ** lookup_service field:
-//      - must be set and non-empty and must parse as a target URI
-//   ** max_age field:
-//      - if not specified or is greater than maxMaxAge, it will be reset to
-//        maxMaxAge
-//   ** stale_age field:
-//      - if the value is greater than or equal to max_age, it is ignored
-//      - if set, then max_age must also be set
-//   ** valid_targets field:
-//      - will be ignored
-//   ** cache_size_bytes field:
-//      - must be greater than zero
-//      - TODO(easwars): Define a minimum value for this field, to be used when
-//        left unspecified
-//   ** request_processing_strategy field:
-//      - must have a value other than STRATEGY_UNSPECIFIED
-//      - if set to SYNC_LOOKUP_DEFAULT_TARGET_ON_ERROR or
-//        ASYNC_LOOKUP_DEFAULT_TARGET_ON_MISS, the default_target field must be
-//        set to a non-empty value
-// * childPolicy field:
-//  - must find a valid child policy with a valid config (the child policy must
-//    be able to parse the provided config successfully when we pass it a dummy
-//    target name in the target_field provided by the
-//    childPolicyConfigTargetFieldName field)
-// * childPolicyConfigTargetFieldName field:
+//   - routeLookupConfig:
+//     ** grpc_keybuilders field:
+//   - must have at least one entry
+//   - must not have two entries with the same Name
+//   - must not have any entry with a Name with the service field unset or
+//     empty
+//   - must not have any entries without a Name
+//   - must not have a headers entry that has required_match set
+//   - must not have two headers entries with the same key within one entry
+//     ** lookup_service field:
+//   - must be set and non-empty and must parse as a target URI
+//     ** max_age field:
+//   - if not specified or is greater than maxMaxAge, it will be reset to
+//     maxMaxAge
+//     ** stale_age field:
+//   - if the value is greater than or equal to max_age, it is ignored
+//   - if set, then max_age must also be set
+//     ** valid_targets field:
+//   - will be ignored
+//     ** cache_size_bytes field:
+//   - must be greater than zero
+//   - TODO(easwars): Define a minimum value for this field, to be used when
+//     left unspecified
+//     ** request_processing_strategy field:
+//   - must have a value other than STRATEGY_UNSPECIFIED
+//   - if set to SYNC_LOOKUP_DEFAULT_TARGET_ON_ERROR or
+//     ASYNC_LOOKUP_DEFAULT_TARGET_ON_MISS, the default_target field must be
+//     set to a non-empty value
+//   - childPolicy field:
+//   - must find a valid child policy with a valid config (the child policy must
+//     be able to parse the provided config successfully when we pass it a dummy
+//     target name in the target_field provided by the
+//     childPolicyConfigTargetFieldName field)
+//   - childPolicyConfigTargetFieldName field:
 //   - must be set and non-empty
 func (*rlsBB) ParseConfig(c json.RawMessage) (serviceconfig.LoadBalancingConfig, error) {
 	cfgJSON := &lbConfigJSON{}
@@ -271,13 +272,13 @@ func (*rlsBB) ParseConfig(c json.RawMessage) (serviceconfig.LoadBalancingConfig,
 // which contain invalid child policy configs which we know will fail for sure.
 //
 // It does the following:
-// * Unmarshals the provided child policy config into a map of string to
-//   json.RawMessage. This allows us to add an entry to the map corresponding
-//   to the targetFieldName that we received in the service config.
-// * Marshals the map back into JSON, finds the config parser associated with
-//   the child policy and asks it to validate the config.
-// * If the validation succeeded, removes the dummy entry from the map and
-//   returns it. If any of the above steps failed, it returns an error.
+//   - Unmarshals the provided child policy config into a map of string to
+//     json.RawMessage. This allows us to add an entry to the map corresponding
+//     to the targetFieldName that we received in the service config.
+//   - Marshals the map back into JSON, finds the config parser associated with
+//     the child policy and asks it to validate the config.
+//   - If the validation succeeded, removes the dummy entry from the map and
+//     returns it. If any of the above steps failed, it returns an error.
 func validateChildPolicyConfig(cp *loadBalancingConfig, cpTargetField string) (map[string]json.RawMessage, error) {
 	var childConfig map[string]json.RawMessage
 	if err := json.Unmarshal(cp.Config, &childConfig); err != nil {

@@ -19,8 +19,8 @@ package edsbalancer
 import (
 	"testing"
 
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils"
+	xdsclient "google.golang.org/grpc-forked/xds/internal/client"
+	"google.golang.org/grpc-forked/xds/internal/testutils"
 )
 
 func init() {

@@ -29,8 +29,8 @@ import (
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	"github.com/golang/protobuf/jsonpb"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/google"
+	"google.golang.org/grpc-forked"
+	"google.golang.org/grpc-forked/credentials/google"
 )
 
 const (
@@ -77,18 +77,19 @@ type xdsServer struct {
 // bootstrap file found at ${GRPC_XDS_BOOTSTRAP}.
 //
 // The format of the bootstrap file will be as follows:
-// {
-//    "xds_server": {
-//      "server_uri": <string containing URI of xds server>,
-//      "channel_creds": [
-//        {
-//          "type": <string containing channel cred type>,
-//          "config": <JSON object containing config for the type>
-//        }
-//      ]
-//    },
-//    "node": <JSON form of corepb.Node proto>
-// }
+//
+//	{
+//	   "xds_server": {
+//	     "server_uri": <string containing URI of xds server>,
+//	     "channel_creds": [
+//	       {
+//	         "type": <string containing channel cred type>,
+//	         "config": <JSON object containing config for the type>
+//	       }
+//	     ]
+//	   },
+//	   "node": <JSON form of corepb.Node proto>
+//	}
 //
 // Currently, we support exactly one type of credential, which is
 // "google_default", where we use the host's default certs for transport

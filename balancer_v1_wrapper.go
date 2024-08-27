@@ -21,10 +21,10 @@ package grpc
 import (
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc-forked/balancer"
+	"google.golang.org/grpc-forked/connectivity"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/resolver"
 )
 
 type balancerWrapperBuilder struct {

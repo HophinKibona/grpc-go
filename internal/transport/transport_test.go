@@ -36,11 +36,11 @@ import (
 
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc-forked/codes"
+	"google.golang.org/grpc-forked/internal/grpctest"
+	"google.golang.org/grpc-forked/internal/leakcheck"
+	"google.golang.org/grpc-forked/internal/testutils"
+	"google.golang.org/grpc-forked/status"
 )
 
 type s struct {
@@ -1654,7 +1654,7 @@ func (s) TestPingPong1MB(t *testing.T) {
 	runPingPongTest(t, 1048576)
 }
 
-//This is a stress-test of flow control logic.
+// This is a stress-test of flow control logic.
 func runPingPongTest(t *testing.T, msgSize int) {
 	server, client, cancel := setUp(t, 0, 0, pingpong)
 	defer cancel()

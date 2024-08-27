@@ -1,3 +1,4 @@
+//go:build !linux || appengine
 // +build !linux appengine
 
 /*
@@ -23,7 +24,7 @@ package channelz
 import (
 	"sync"
 
-	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc-forked/grpclog"
 )
 
 var once sync.Once

@@ -31,10 +31,10 @@ import (
 	"errors"
 	"sync"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/profiling"
-	ppb "google.golang.org/grpc/profiling/proto"
+	"google.golang.org/grpc-forked"
+	"google.golang.org/grpc-forked/grpclog"
+	"google.golang.org/grpc-forked/internal/profiling"
+	ppb "google.golang.org/grpc-forked/profiling/proto"
 )
 
 // ProfilingConfig defines configuration options for the Init method.
